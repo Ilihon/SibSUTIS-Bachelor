@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Курсовая работа</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<canvas id="canvas">
+    <!--            style="background: url('./img/newYearRock.png')">-->
+</canvas>
+
+<!-- <div class="cloud">
+<img src="img/cloud-01.png" alt="" class="cloud1">
+<img src="img/cloud-02.png" alt="" class="cloud2">
+<img src="img/cloud-03.png" alt="" class="cloud3">
+<img src="img/cloud-04.png" alt="" class="cloud4">
+</div>     -->
+
+<script src="js/three.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script type="module" src="./js/GLTFLoader.js"></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js'></script> -->
+<script type="module">
+
+    //подключение нужных библиотек
+    // import * as THREE from "https://threejs.org/build/three.module.js";
+    import {OrbitControls} from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
+    import {GLTFLoader} from "./js/GLTFLoader.js";
+    import "./js/three.module.js";
+    // import "./js/three.js";
+
+
+    //задаём цвета, которые будем использовать
+    var Colors = {
+        cyan: 0x248079,
+        brown: 0xD2691E, //ствол
+        brownDark: 0x9A6169, //мостик
+        green: 0x7CFC00, //для деревьев
+        greenLight: 0x9ACD32, //трава
+        gray: 0x888986, //камень
+        pink: 0xECCDCD, // вишня
+        blue: 0x00BFFF, //вода
+        snow: 0xDDDDDD // снег
+    };
+
+    var scene = new THREE.Scene();//сцена
+
+    var h = window.innerHeight, //высота
+        w = window.innerWidth; //ширина
+
+    //у камеры есть свойства
+    var aspectRatio = w / h,//соотношение сторон
+        fieldOfView = 25,//поле зрения
+        nearPlane = .1,//плоскость отсечения
+        farPlane = 1000;
+
+    //сама камера с заданными свойстами   
+    var camera = new THREE.PerspectiveCamera(
+        fieldOfView,
+        aspectRatio,
+        nearPlane,
+        farPlane);
+
+    //наш рендерер
+    const renderer = new THREE.WebGLRenderer({canvas: canvas, alpha: true, antialias: true});
+    const dpi = window.devicePixelRatio;
+    renderer.setSize(w * dpi, h * dpi);
+
+    //наш canvas - берём из нашего документа тег 
+    const theCanvas = document.getElementById('canvas');
+    theCanvas.style.width = `${w}px`;
+    theCanvas.style.height = `${h}px`;
+
+    renderer.shadowMapEnabled = true;//включаем отбрасывание теней объектами
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;//Чтобы использовать этот тип теней, вам необходимо использовать соответствующий тип карты теней
+    document.body.appendChild(renderer.domElement);//присоединяем к DOM
+
+    const controls = new OrbitControls(camera, renderer.domElement); //настройка камеры
+    camera.position.set(-5, 6, 8);//начальная позиция камеры по координатам
+    camera.lookAt(new THREE.Vector3(0, 0, 0));//указываем на центр сцены
+
+    //Добавляем освещение
+    var light = new THREE.AmbientLight(0xffffff, 0.5);//добавляем окружающие освещение (фоновое)
+
+    var shadowLight = new THREE.DirectionalLight(0xffffff, .8);//свет, который излучается в определенном направлении
+    shadowLight.position.set(200, 200, 200);
+    shadowLight.castShadow = true;//отбрасываемая тень сумеречным светом
+
+    var backLight = new THREE.DirectionalLight(0xffffff, .2);//(рассеянное)
+    backLight.position.set(-50, 200, 50);
+    backLight.castShadow = true; //подсветка
+
+    //добавляем освещение на сцену
+    scene.add(backLight);
+    scene.add(light);
+    scene.add(shadowLight);
+
+    // левая сторона острова 
+    var geometry_left = new THREE.BoxGeometry(2, .2, 2); //создание куба
+    var material_ground = new THREE.MeshLambertMaterial({color: Colors.snow});//материал для окрашивания
+    var ground_left = new THREE.Mesh(geometry_left, material_ground);//сетка
+    ground_left.position.set(-1, 0.1, 0); //позиция
+    scene.add(ground_left);//добавляем на сцену
+    customizeShadow(ground_left, .25) // mess, opacity
+
+    //река
+    var geometry_river = new THREE.BoxGeometry(1, .1, 2);//создаём куб
+    var material_river = new THREE.MeshLambertMaterial({color: Colors.blue});//материалы для окрашивания
+    var river = new THREE.Mesh(geometry_river, material_river);//сетка
+    river.position.set(.5, .1, 0);//позиция
+    scene.add(river);//добавляем на сцену
+    customizeShadow(river, .08) // mess, opacity
+
+    //река
+    var geometry_river = new THREE.BoxGeometry(1, .05, 2);//создаём куб
+    var river = new THREE.Mesh(geometry_river, material_ground);//сетка
+    river.position.set(.5, .025, 0);
+    scene.add(river);
+
+    //правая сторона острова
+    var geometry_right = new THREE.BoxGeometry(1, .2, 2);
+    var ground_right = new THREE.Mesh(geometry_right, material_ground);
+    ground_right.position.set(1.5, 0.1, 0);
+    scene.add(ground_right);
+    customizeShadow(ground_right, .25) // mess, opacity
+
+    // var loader_china_town = new GLTFLoader();
+    // var obj_china_town;
+    //   loader_china_town.load('./models/chinatownSmall/scene.gltf', function ( gltf ) {
+    //   obj_china_town = gltf.scene
+    //   obj_china_town.obj_name = "china_town";
+    //   obj_china_town.position.y = 0.687;
+    //   obj_china_town.position.x = -0.9;
+    //   obj_china_town.position.z = 0.1;
+    //   obj_china_town.scale.x = 0.15;
+    //   obj_china_town.scale.y = 0.15;
+    //   obj_china_town.scale.z = 0.15;
+    //   obj_china_town.rotation.y = 3.15;
+    //   gltf.scene.scale.multiplyScalar(0.065);
+    //   scene.add( gltf.scene );
+    // }, undefined, function ( error ) {
+    //   console.error( error );
+    // } );
+
+    var loader_china_house = new GLTFLoader();
+    var obj_china_house;
+    loader_china_house.load('./models/china_house/scene.gltf', function (gltf) {
+        obj_china_house = gltf.scene
+        obj_china_house.obj_name = "china_town";
+        obj_china_house.position.y = 0.187;
+        obj_china_house.position.x = -0.9;
+        obj_china_house.position.z = -0.30;
+        obj_china_house.scale.x = 0.15;
+        obj_china_house.scale.y = 0.15;
+        obj_china_house.scale.z = 0.15;
+        obj_china_house.rotation.y = 3.15;
+        gltf.scene.scale.multiplyScalar(0.065);
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+        console.error(error);
+    });
+
+    // повар подвижной кухни
+    var loader_chef = new GLTFLoader();
+    var obj_chef;
+    loader_chef.load('./models/street_chef/scene.gltf', function (gltf) {
+        obj_chef = gltf.scene
+        obj_chef.obj_name = "chef";
+        obj_chef.position.y = 0.270;
+        obj_chef.position.x = -1.25;
+        obj_chef.position.z = 0.12;
+        obj_chef.scale.x = 0.15;
+        obj_chef.scale.y = 0.15;
+        obj_chef.scale.z = 0.15;
+        obj_chef.rotation.y = 1.15;
+        gltf.scene.scale.multiplyScalar(0.0009);
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+        console.error(error);
+    });
+
+    // подвижная кухня
+    // var loader_dumplings = new GLTFLoader();
+    // var obj_dumplings;
+    // loader_dumplings.load('./models/mobile_kitchen/scene.gltf', function (gltf) {
+    //     obj_dumplings = gltf.scene
+    //     obj_dumplings.obj_name = "bridge";
+    //     obj_dumplings.position.y = 0.200;
+    //     obj_dumplings.position.x = -1.3;
+    //     obj_dumplings.position.z = 0.348;
+    //     obj_dumplings.scale.x = 0.15;
+    //     obj_dumplings.scale.y = 0.15;
+    //     obj_dumplings.scale.z = 0.15;
+    //     obj_dumplings.rotation.y = 3.15;
+    //     gltf.scene.scale.multiplyScalar(0.0020);
+    //     scene.add(gltf.scene);
+    // }, undefined, function (error) {
+    //     console.error(error);
+    // });
+
+    // тележка с мороженным
+    var loader_ice_cream_cart = new GLTFLoader();
+    var obj_ice_cream_cart;
+    loader_ice_cream_cart.load('./models/ice_cream_cart/scene.gltf', function (gltf) {
+        obj_ice_cream_cart = gltf.scene
+        obj_ice_cream_cart.obj_name = "ice_cream_cart";
+        obj_ice_cream_cart.position.y = 0.210;
+        obj_ice_cream_cart.position.x = -0.64;
+        obj_ice_cream_cart.position.z = -0.225;
+        obj_ice_cream_cart.scale.x = 0.15;
+        obj_ice_cream_cart.scale.y = 0.15;
+        obj_ice_cream_cart.scale.z = 0.15;
+        obj_ice_cream_cart.rotation.y = 3.15;
+        gltf.scene.scale.multiplyScalar(0.0035);
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+        console.error(error);
+    });
+
+    // рейнджер пуляющийся снежками
+    var space_ranger = function (x, y, z, rotation_angle) {
+        var loader_space_ranger = new GLTFLoader();
+        var obj_space_ranger;
+        loader_space_ranger.load('./models/space_ranger/scene.gltf', function (gltf) {
+            obj_space_ranger = gltf.scene;
+            obj_space_ranger.obj_name = "space_ranger";
+            obj_space_ranger.position.x = x;
+            obj_space_ranger.position.y = y;
+            obj_space_ranger.position.z = z;
+            obj_space_ranger.scale.x = 0.15;
+            obj_space_ranger.scale.y = 0.15;
+            obj_space_ranger.scale.z = 0.15;
+            obj_space_ranger.rotation.y = rotation_angle;
+            // gltf.castShadow = true;
+            // gltf.receiveShadow = true;
+            gltf.scene.scale.multiplyScalar(5);
+            scene.add(gltf.scene);
+        }, undefined, function (error) {
+            console.error(error);
+        });
+    }
+    space_ranger(5.5, 2, 0.12, 3.15);
+    space_ranger(-5, 2, 0.12, 0);
+
+    var loader_kitten = new GLTFLoader();
+    var obj_kitten;
+    loader_kitten.load('./models/kitten/scene.gltf', function (gltf) {
+        obj_kitten = gltf.scene
+        obj_kitten.obj_name = "china_town";
+        obj_kitten.position.y = 0.187;
+        obj_kitten.position.x = 1.6;
+        obj_kitten.position.z = 0.3;
+        obj_kitten.scale.x = 0.15;
+        obj_kitten.scale.y = 0.15;
+        obj_kitten.scale.z = 0.15;
+        obj_kitten.rotation.y = 0.75;
+        gltf.scene.scale.multiplyScalar(0.6);
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+        console.error(error);
+    });
+
+    //создание деревьев 
+    var tree_oak = function (x, z, rotation_angle) {
+
+        //ствол
+        var material_trunk = new THREE.MeshLambertMaterial({color: Colors.brownDark});
+        var geometry_trunk = new THREE.BoxGeometry(.15, .15, .15);
+        var trunk = new THREE.Mesh(geometry_trunk, material_trunk);
+        trunk.position.set(x, .275, z);
+        trunk.castShadow = true;
+        trunk.receiveShadow = true;
+        scene.add(trunk);
+
+        //листья
+        var geometry_leaves = new THREE.BoxGeometry(.4, .60, .20);
+        geometry_leaves.rotateY(rotation_angle); // поварачиваем листву
+        var material_leaves = new THREE.MeshLambertMaterial({color: Colors.pink});
+        var leaves = new THREE.Mesh(geometry_leaves, material_leaves);
+        leaves.position.set(x, .2 + .15 + .4 / 2, z);
+        leaves.castShadow = true;
+        trunk.receiveShadow = true;
+
+
+        var geometry_leaves2 = new THREE.BoxGeometry(.50, .30, .50);
+        geometry_leaves.rotateY(rotation_angle); // поварачиваем листву
+        var material_leaves2 = new THREE.MeshLambertMaterial({color: Colors.pink});
+        var leaves2 = new THREE.Mesh(geometry_leaves2, material_leaves2);
+        leaves2.position.set(x, .1 + .15 + .4 / 2, z);
+
+        leaves2.castShadow = true;
+        trunk.receiveShadow = true;
+        customizeShadow(leaves, .25) // mess, opacity
+        scene.add(leaves);
+        scene.add(leaves2)
+    }
+
+    //деревья на левой стороне
+    tree_oak(-1.75, -.85, -0.7);
+    tree_oak(-1.55, -.5, 0);
+    tree_oak(-1.75, -.25, 0);
+    tree_oak(-1.6, -0, 0);
+    tree_oak(-1.8, .35, -1.05);
+    tree_oak(-1.25, -.85, 0.5);
+    tree_oak(-.75, -.925, 0.5);
+    tree_oak(-.35, -.85, 0.5);
+    tree_oak(-.15, -.65, 0);
+    //деревья на правой стороне
+    tree_oak(1.25, -.85, 0);
+    tree_oak(1.25, .75, 0);
+    tree_oak(1.5, -.5, 0);
+    tree_oak(1.75, -.35, 0);
+
+    //настройка тени
+    function customizeShadow(t, a) { //opacity, target mesh
+        var material_shadow = new THREE.ShadowMaterial({opacity: a});
+        var mesh_shadow = new THREE.Mesh(t.geometry, material_shadow);
+        mesh_shadow.position.set(t.position.x, t.position.y, t.position.z);
+        mesh_shadow.receiveShadow = true;
+        scene.add(mesh_shadow);
+    }
+
+    //материал камня
+    var material_stone = new THREE.MeshPhysicalMaterial({color: Colors.gray});
+
+    //мост
+    for (var i = 0; i < 6; i++) {
+        var geometry_block = new THREE.BoxGeometry(.15, .02, .4);
+        var block = new THREE.Mesh(geometry_block, material_stone);
+        block.position.set(0 + .1 * i, .21 + 0.01 * i, .2);
+        block.castShadow = true;
+        block.receiveShadow = true;
+        scene.add(block);
+    }
+    for (var i = 4; i >= 0; i--) {
+        var geometry_block = new THREE.BoxGeometry(.15, .02, .4);
+        var block = new THREE.Mesh(geometry_block, material_stone);
+        block.position.set(1. - .1 * i, .21 + 0.01 * i, .2);
+        block.castShadow = true;
+        block.receiveShadow = true;
+        scene.add(block);
+    }
+
+    // var snowflake_drop_texture = new THREE.TextureLoader().load('img/rocksee2.jpg');
+    // var snowflake_drop_material = new THREE.MeshLambertMaterial({map: snowflake_drop_texture, transparent: true});
+
+    //материал снежинки
+    var snowflake_drop_material = new THREE.MeshPhongMaterial({color: Colors.snow});
+
+    //наши капли
+    var Snowflake = function () {
+        this.geometry = new THREE.BoxGeometry(.1, .1, .1);// в форме кубиков
+        this.drop = new THREE.Mesh(this.geometry, snowflake_drop_material); //сетка
+        this.drop.position.set(-4.5 + Math.random(.1, .9) * 10, 2.6, -1 + (Math.random() * 20) * .1);// с помощью математики будем добавлять рандомно
+        scene.add(this.drop);//добавляем на сцену
+        this.speed = 0;//скорость изначально
+        this.lifespan = (Math.random() * 50) + 20;//продолжительность жизни
+        let x_size_scaler = 1, y_size_scaler = 1, z_size_scaler = 1;
+        //обновление капли
+        this.update = function () {
+            this.speed += .001;
+            this.lifespan--;
+            this.drop.scale.set(x_size_scaler, y_size_scaler, z_size_scaler);
+
+            x_size_scaler -= 0.005;
+            y_size_scaler -= 0.005;
+            z_size_scaler -= 0.005;
+            // this.drop.scale.multiplyScalar(x_size_scaler);
+            this.drop.position.x += (.5 - this.drop.position.x) / 70;
+            this.drop.position.y -= this.speed;
+        }
+    }
+
+    var drops = [];//массив снежинок
+    var count = 0;//счётчик
+
+    var render = function () {
+        requestAnimationFrame(render);
+        if (count % 10 == 0) {
+            count = 0;
+            for (var i = 0; i < 8; i++) {
+                drops.push(new Snowflake());
+            }
+        }
+        count++;
+        for (var i = 0; i < drops.length; i++) {
+            drops[i].update();
+            if (drops[i].lifespan < 0) {
+                scene.remove(scene.getObjectById(drops[i].drop.id));
+                drops.splice(i, 1);
+            }
+        }
+        controls.update();
+        renderer.render(scene, camera);
+    }
+    render();
+</script>
+
+</body>
+</html>

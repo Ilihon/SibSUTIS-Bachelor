@@ -1,0 +1,11 @@
+Model Information:
+* title:	котик
+* source:	https://sketchfab.com/3d-models/da5dff2131f34cc89af7c3a050572409
+* author:	gangnamlol (https://sketchfab.com/gangnamlol)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "котик" (https://sketchfab.com/3d-models/da5dff2131f34cc89af7c3a050572409) by gangnamlol (https://sketchfab.com/gangnamlol) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
