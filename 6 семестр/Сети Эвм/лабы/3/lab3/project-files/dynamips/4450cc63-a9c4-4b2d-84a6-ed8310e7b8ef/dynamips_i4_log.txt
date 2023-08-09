@@ -1,0 +1,63 @@
+Mar 05 20:14:37.753 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 05 20:14:37.754 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52728.
+Mar 05 20:14:38.222 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 05 20:14:38.222 HYPERVISOR: exec_cmd: hypervisor working_dir D:\personal\учеба\6 семестр\Сети Эвм\лабы\3\lab3\project-files\dynamips 
+Mar 05 20:14:38.223 GENERAL: working_dir=D:\personal\учеба\6 семестр\Сети Эвм\лабы\3\lab3\project-files\dynamips
+Mar 05 20:14:38.223 HYPERVISOR: exec_cmd: hypervisor working_dir D:\personal\учеба\6 семестр\Сети Эвм\лабы\3\lab3\project-files\dynamips\c215e9bb-7a5c-4940-b058-8c2b3a2bed63 
+Mar 05 20:14:38.224 GENERAL: working_dir=D:\personal\учеба\6 семестр\Сети Эвм\лабы\3\lab3\project-files\dynamips\c215e9bb-7a5c-4940-b058-8c2b3a2bed63
+Mar 05 20:14:38.224 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Mar 05 20:14:38.227 VM: VM R1 created.
+Mar 05 20:14:38.228 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5007 
+Mar 05 20:14:38.228 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Mar 05 20:14:38.229 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Mar 05 20:14:38.229 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Mar 05 20:14:38.229 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 20:14:38.229 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Mar 05 20:14:38.231 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ilihon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Mar 05 20:14:38.231 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.3f80.0000 
+Mar 05 20:14:38.231 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Mar 05 20:14:38.232 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Mar 05 20:14:38.232 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 20:14:38.232 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Mar 05 20:14:41.243 HYPERVISOR: exec_cmd: nio create_udp udp-7a167d1c-509d-453d-9aa4-4823ffc604cd 10002 127.0.0.1 10003 
+Mar 05 20:14:41.495 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-7a167d1c-509d-453d-9aa4-4823ffc604cd 
+Mar 05 20:14:41.496 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 20:14:42.250 HYPERVISOR: exec_cmd: nio create_udp udp-8aab0a35-0c78-4d51-9848-34107843e136 10016 127.0.0.1 10017 
+Mar 05 20:14:42.253 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-8aab0a35-0c78-4d51-9848-34107843e136 
+Mar 05 20:14:42.254 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 20:14:42.486 HYPERVISOR: exec_cmd: nio create_udp udp-e0d28e3d-5ca2-48f3-81d5-f8e8f815dfe5 10022 127.0.0.1 10023 
+Mar 05 20:14:42.489 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-e0d28e3d-5ca2-48f3-81d5-f8e8f815dfe5 
+Mar 05 20:14:42.489 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:15:55.919 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Mar 05 21:15:55.922 VM: VM Ghost created.
+Mar 05 21:15:55.923 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Ilihon/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Mar 05 21:15:55.923 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Mar 05 21:15:55.923 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'D:\personal\учеба\6 семестр\Сети Эвм\лабы\3\lab3\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost' 
+Mar 05 21:15:55.924 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:15:55.927 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Mar 05 21:15:55.927 HYPERVISOR: exec_cmd: vm start R1 
+Mar 05 21:18:13.924 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:18:13.926 HYPERVISOR: exec_cmd: vm stop R1 
+Mar 05 21:18:14.303 VM: VM R1 shutdown.
+Mar 05 21:18:14.309 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 05 21:19:25.221 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:19:25.222 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x0 
+Mar 05 21:19:25.222 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:19:25.222 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:19:25.223 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Mar 05 21:19:25.223 HYPERVISOR: exec_cmd: vm start R1 
+Mar 05 21:19:45.710 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R1 0 
+Mar 05 21:19:56.297 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:19:56.298 HYPERVISOR: exec_cmd: vm stop R1 
+Mar 05 21:19:56.468 VM: VM R1 shutdown.
+Mar 05 21:19:56.469 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 05 21:20:06.803 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:20:06.820 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa311c 
+Mar 05 21:20:21.887 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Mar 05 21:20:21.889 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 21:20:21.890 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Mar 05 21:20:21.890 HYPERVISOR: exec_cmd: vm start R1 
+Mar 05 23:18:24.100 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 05 23:18:24.101 HYPERVISOR: exec_cmd: vm stop R1 
+Mar 05 23:18:24.488 VM: VM R1 shutdown.
+Mar 05 23:18:24.490 HYPERVISOR: exec_cmd: vm extract_config R1 
