@@ -1,0 +1,18 @@
+declare
+invalid_min_rating exception;
+min_rating integer;
+begin
+select min(rating) into min_rating from cust;
+if min_rating < 200 then
+raise invalid_min_rating;
+end if;
+exception
+when invalid_min_rating then
+dbms_output.put_line('Исключение, минимальный рейтинг меньше
+200');
+when no_data_found then
+dbms_output.put_line('Данные не найдены');
+when others then
+dbms_output.put_line('Ошибка');
+end;
+/

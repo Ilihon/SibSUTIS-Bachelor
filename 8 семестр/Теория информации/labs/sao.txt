@@ -1,0 +1,941 @@
+
+  THE FIRST FLOOR OF AINCRAD WAS AN “ANYTHING goes” floor, with no unifying design theme. The terrain was rich and varied, with fields, forests, wastelands, and canyons, not to mention numerous smaller towns and villages outside the main city. It added up to a welcoming atmosphere for new players, but now that the game was deadly, few people were in the mood to soak in the surroundings.
+
+  The second floor, however, had a very clear, unified design. The land was covered with green grazing fields and multilayered flat-topped mountains, and the monsters within were all animal types. As a nod to the effort of beating the first floor, the wilderness of the second was not very difficult, which, combined with the visual style, gave it a laid-back, “pastoral” theme. Most players called it the “cow floor,” for obvious reasons.
+
+  Next up was the unconquered third floor.
+
+  As I climbed the spiral staircase from the second-floor boss chamber to the third-floor town, I clenched my fist and muttered, “In a way, this is where SAO really starts…”
+
+  It was meant more as a reminder to myself, but my companion heard me and asked, “Really? Why is that?”
+
+  I scratched my head and explained, “Well…the third floor is where human mobs first show up. The kobolds and tauruses from below were demihumans, so they could use simple sword skills, but they were still monsters, right? Well, some of the enemies ahead look indistinguishable from other players. You honestly wouldn’t be able to tell them apart without a color cursor. Just like NPCs, they can talk and use expert sword skills. Meaning…”
+
+  I looked over my shoulder and fixed Asuna the fencer with a look. “This is where the real Sword Art Online begins. I read plenty of magazine interviews and articles on Akihiko Kayaba, the man who trapped us in here. He said that the term Sword Art refers to the light and sound of the clash of sword skill on sword skill—a concerto of life and death.”
+
+  “…Oh…”
+
+  The phrase that had given me shivers of excitement a year ago did not have any noticeable effect on Asuna. We continued walking up the stairs at a measured pace. Her next comment took me by surprise.
+
+  “Does that mean he was already plotting this crime when he gave that interview?”
+
+  “Umm…well, I guess it does.”
+
+  On that fateful day five weeks ago, Kayaba summoned all the players of SAO into the center square of the Town of Beginnings and announced, “I created the NerveGear and SAO precisely in order to build this world and observe it. I have now achieved that aim.”
+
+  If those words were true, then from the very first line Kayaba ever drew on a NerveGear diagram, he’d been envisioning this terrible crime as his ultimate goal. All of his statements that thrilled my young mind (well, only a year younger) now held a terrible double meaning.
+
+  Asuna quietly murmured, “A concerto…of life and death. I wonder if he really meant that to refer to the sword art of player against humanoid enemies.”
+
+  “Huh…? What do you mean?”
+
+  It was my turn to be confused. I’d climbed up identical sets of spiraling staircases to the next floor nearly a dozen times between the beta and the full release, so it was familiar enough that I could continue to climb while facing backward. The only thing that differed between floors was the style of carvings on the blackened walls. A closer look always revealed some kind of thematic hint at the next floor’s contents, but I was concentrating on Asuna’s words at the moment.
+
+  Her face serious, she whispered, “Maybe I’m overthinking this…but a concerto isn’t a performance where instruments form a pair to play against each other. That would be a duet.”
+
+  “So what exactly is a concerto, then?”
+
+  “The definition changes depending on the era, but at its most basic, it’s an orchestra acting as the background accompaniment to a soloist or small group of independent players. So it’s not one-on-one, but one-on-many, or few-on-many.”
+
+  “One…against many…” I repeated and stopped myself before I asked if it could mean a player against a group of monsters.
+
+  It was almost never the case that a single player faced off against a large collection of foes—say, ten or more. Without any magic spells that could attack a large area at once, and the closest sword skills merely adding a foot or two to the weapon’s reach, being surrounded by monsters in SAO meant certain death.
+
+  That ironclad law was reflected in the game’s design, so nearly all monsters were solitary, or in groups no larger than three or four. As long as you didn’t run around intentionally drawing attention or hitting alarm traps, a single player would never encounter a large mass of enemies. Even if it happened, no one would be foolish enough to stand and fight.
+
+  “In that case, there’s no battle in this world that actually corresponds to a real concerto. If anything, it might refer to a boss battle…but in that case, the boss would be the lead, and the players, the accompaniment,” I said with a wry chuckle. Asuna opened her mouth to respond, then shut it. After a brief pause, she grinned slightly.
+
+  “I suppose so. I’m just overthinking this. More importantly, Kirito…”
+
+  “Huh? What?”
+
+  “Never mind, too late.”
+
+  As soon as she said those words, the back of my head slammed against the thick stone door at the top of the stairs.
+
+  “Nguh!” I grunted pitifully and lost my balance, hands waving wildly. I made sure to fall backward, sensing it would still be better than flopping forward and directly onto Asuna.
+
+  But in that brief instant, the stone door that should have propped my back up had already opened, and I fell shrieking through the doorway to land directly on my butt atop the mossy paving stones—the momentous first step into the new, uncharted floor.
+
+  The third floor of Aincr
+ad.
+
+  Its design theme was “forest,” but this was forest on a scale unlike the woods around Horunka on the first floor, or the southern area of the second floor. Even the smallest tree here had a trunk at least three feet across and towered nearly a hundred feet in the air. These vast, ancient trees stretched as far as the eye could see, and the golden beams of light that trickled through their endless branches and leaves was a magical sight.
+
+  “Wow!” Asuna marveled, walking right past me as I writhed and clutched my tailbone. I spun around halfway on my rear end to take in the sight. She stopped ahead and spun around in the narrow band of light, drinking in the panorama of thick, endless forest.
+
+  “Incredible…Just this sight was worth all of the trouble to get here!”
+
+  The hood of her familiar wool cape was pulled back, so the glint of light reflecting off her long brown hair caught my eye. With her slender build and elegant beauty, Asuna looked more like a frolicking forest dryad than a human player.
+
+  “…Yeah. It really was,” I murmured and got to my feet. I straightened my leather coat and stretched. Even the air seemed to be sweeter and moister here, full of rich phytoncides…I could imagine.
+
+  I turned back to see that we’d just walked out of an ancient stone structure built into the roots of a particularly huge tree, the mouth of the staircase yawning and black. Within twenty minutes, the other frontline players would be wrapping up their tasks and coming out of this exit.
+
+  “And now,” I murmured, opening my window and starting up an instant message to Argo the Rat. I told the information dealer that she should inform the public that the second floor had been conquered, and the teleport gate to the third floor would be open within an hour. She’d been present in the boss chamber but had disappeared before the fight was over, so this was just in case.
+
+  The task set to me by Lind, leader of the raid party, was complete. I closed the window and took another look around the forest.
+
+  I wanted to stand around and enjoy the feeling of satisfaction at reaching the third floor, but time was of the essence. Like any other new floor, there was shopping to be done, quests to undertake, and levels to gain. But before any of that, I had to confirm something with my temporary party member.
+
+  I steeled myself for the task, sidled up to Asuna as she continued to soak in the scenery, and coughed politely.
+
+  “Um, I hate to interrupt your leisure…”
+
+  “…What is it?”
+
+  She turned to me, a rare smile on her face. I drew her gaze north with the point of my index finger. A stone path leading away from the structure behind us split into a Y-intersection just twenty yards ahead.
+
+  “If we turn right up there, it goes to the main city. The left side takes us through the forest for a while, and eventually to the next town.”
+
+  “…I see.”
+
+  “Normally, we ought to go to the city and activate the portal, but I’d prefer to leave that up to Lind and Kibaou’s teams, since they’ll be coming right up after us.”
+
+  “……I see.”
+
+  “Part of it is because I don’t want the attention, but the other part is that there’s a task we can take care of if we go down the left path. I realize both of those reasons are my own personal rationale, so…”
+
+  The grin on her face began to fade. In fact, there was a threatening glare forming in her eyes. It finally dawned on me that if I chose my words poorly here, I would be earning myself the full and mighty wrath of one of Asuna’s bad moods—I just didn’t know the rules of how to avoid that.
+
+  “…And?” she prompted, her voice cool.
+
+  “Um…well…we do need to restock on supplies, so if you wanted to just go straight to the main city, I suppose we’d have to break up our party here…But of course, if you wanted to join me in tackling this quest in the forest, I wouldn’t try to convince you to reconsider…”
+
+  “If you’re asking me if I don’t want to break up the party, then no, I have no problem with that. We’re both solo players, unless I’m sorely mistaken?”
+
+  “Y-yes, ma’am.”
+
+  “But this errand you’re talking about is best if taken care of first, I assume? In that case, I’ll join you—I hate being inefficient. Of course, if you’d rather kick me out of the party so you can reap the benefits all to yourself, I suppose I can’t stop you.”
+
+  “N-no, no, I don’t want to be selfish at all. Besides, it’ll be more efficient for us as a group.”
+
+  “Then let’s get going. I won’t need to restock and repair for a little while yet.”
+
+  “G-great.”
+
+  She turned on her heel and strode off down the path, her boots clicking on the stones. I hurried after her, inwardly deciding that I’d just barely slid in safe, though I had no idea what I was safe from exactly.
+
+  If I’d known it would come to this, I would have talked to the girls in class more often, I silently rued, then snorted in denial. If I was playing a middle schooler with that kind of character build, I wouldn’t have been ready to log in to the retail version of SAO five seconds after the servers went online, and I’d never be walking through this fantastical forest with this fickle fencer in the first place. It was a pointless conjecture.
+
+  Speaking of which…
+
+  In the month that I’d been trapped in this castle, I’d been hell-bent on survival, on powering myself up through whatever means I could find. Had I ever even stopped to regret my decision to jump into Sword Art Online?
+
+  Regret would be the normal choice. Anyone who didn’t regret getting stuck in here was insane. But no matter how far back I scrolled through my emotional event log, despite the presence of terror or homesickness, there were no hits for “regret.”
+
+  So either I was insane, or the circumstances never gave me enough breathing room to even consider regretting my choice. If it was the latter, then the fencer strolling along ahead of me was part of those circumstances. I’d spent so much time catering to her whims and needs that perhaps regret and other negative emotions simply couldn’t find any purchase in my brain…
+
+  No, don’t you dare start to thank her! She’s torn you a new one ten times more often than she’s ever shown any gratitude!
+
+  I picked up my pace to draw even with my casual partner.
+
+  Based on my beta experience, I knew that for the thirty minutes or so between the previous floor’s boss’s being slain and the teleport gate being activated, the spawn rate of monsters was drastically decreased.
+
+  I suspected that it was a gift to those weary champions, to ensure that they didn’t get wiped out by mobs before they could reach the gate of the next floor’s main town. Sadly, that effect was only active around the town itself.
+
+  After five minutes of walking through the forest, I sensed a shift in the surrounding air, even before my Search skill went off. The beautiful, fairy-tale forest seemed to grow harder and more menacing with every step.
+
+  “Listen up, Asuna. The enemies here aren’t any tougher than the ones on the second floor. They’re mostly animals and plants, too, so they won’t use sword skills on us,” I explained. She nodded silently.
+
+  “But there’s one pattern all the mobs here employ: They’re going to try to draw us into the forest and away from the path during battle. If you charge forward every time they give you an opening, you’ll be totally lost by the time you win the fight.”
+
+  “Can’t you just open your map and see the places that you’ve walked already?”
+
+  “The thing is…” I waved my right hand to open the menu, flipped to the map, and enabled visible mode to show it to Asuna.
+
+  “Oh…It’s all dim,” she remarked. Indeed, while normally most of the map would be grayed out with clear little -D models of where we’d already been, the current map screen was dim and hazy, as if obscured by mist. Even squinting closely at it did not reveal the location of the path.
+
+  “This area has a name: the Forest of Wavering Mists. The map’s hard to read, and occasionally you walk into mist so thick, you can barely see a thing. So the ironclad rule around here is, don
+’t leave the path or your party. Keep that in mind at all times.”
+
+  “Understood. So why don’t you give me a demonstration?”
+
+  “Huh?”
+
+  “Something’s watching us back there.”
+
+  I slowly turned around. Off the path, at the very lip of the woods, stood—no, grew—a thin, withered tree. Its pale yellow trunk was only a foot and a half thick and six feet tall, far smaller than the behemoth specimens all around. But pale lights shone in two small knotholes in the bark, and the branches stretching out to the sides waved like slender claws.
+
+  The dried-out tree and I stared at each other for several seconds. Eventually it pulled a creaking root out of the ground and stepped forward. Next, the left root pulled out for a step, and it began to walk toward me. The wobbling steps soon turned to a full-speed dash. A third knothole opened beneath the other two, and the tree warbled a howl.
+
+  “Molooo!”
+
+  The Treant Sapling had several special abilities, one of which was that when it stood perfectly still, it wouldn’t set off my Search skill. I was so absorbed in my explanation that I must have walked right past it.
+
+  Constant vigilance! I admonished myself, reaching over my shoulder to pull my beloved Anneal Blade + from its sheath.
+
+  Three minutes later, I’d cut off both of the arm branches, and Asuna had penetrated its mouth knothole with her Wind Fleuret +. The treant moaned sadly and exploded into polygonal shards.
+
+  We fist-bumped in celebration and put away our swords. Despite my warning, I’d fallen for the tree’s deceptive flipping of its front and rear sides, and wandered five yards into the forest. That wasn’t a big problem now, but when the mists were out, even ten yards’ distance could be disastrous.
+
+  As she walked down the old stone path, Asuna said, “I feel a bit…guilty about that.”
+
+  “Oh?”
+
+  “Well, that tree monster was a sapling, right? It’s not very eco-friendly to cut it down like that.”
+
+  “M-maybe, but you wouldn’t be saying that if you saw the Elder Treant that he’d grow into. You’d be saying we gotta chop that sucker down now while we got the chance!”
+
+  “…Don’t talk like that. I get enough of it from Kibaou,” she warned.
+
+We returned to the path and shared a short sigh of relief. The angle of the golden light from overhead was changing already, but we had plenty of time until nightfall.
+
+  “So, it should be right around here…”
+
+  “What is? Oh, that task you said you wanted to take care of.”
+
+  “Yes. We’re just initiating a quest…but the starting location of the NPC is a bit random. How are your ears, Asuna?”
+
+  I gave her a glance and saw that the fencer was backing away, holding her hands over her cute little pink ears.
+
+  “…Is that what you’re into, Kirito? You have an ear thing?”
+
+  “N-n-no! I was referring to your hearing, not the shape of your ears…”
+
+  “I’m just kidding. Besides, this situation has nothing to do with our hearing. We’re listening with our brains, not our eardrums.”
+
+  “Ah, good point. Well, let’s try to find it. If only one of us had the Eavesdropping skill.”
+
+  I straightened my back and cupped my palms behind my ears, knowing it was probably pointless. Asuna followed my example.
+
+  “So what sound am I listening for? Don’t tell me it’s a single leaf falling.”
+
+  “Don’t worry, it’s not a natural sound. We’re trying to find the clanging of sword on sword.”
+
+  Asuna looked startled for a moment, then nodded her understanding.
+
+  We stood in the middle of the path, our backs pressed together, focusing in all four directions with four ears. I often ignored them, but there was actually quite a lot of atmospheric noise in the game. The whistling of the breeze and rustling of leaves, scampering critters and chirping songbirds—I shut each and every one of those sounds out of my mind, searching for the harsh, artificial clang of metal on metal.
+
+  “…!”
+
+  Asuna and I twitched together. I turned to my right, and Asuna to her left…to the southwest. There was a faint but distinct clashing of blades coming from that direction.
+
+  “Let’s go,” I said, striding forward. Asuna pulled my coat from behind.
+
+  “Is it safe to go into the forest?”
+
+  “Don’t worry, as long as we start the quest safely, we’ll be able to return to the path.”
+
+  “…And what if we don’t?”
+
+  “Not a problem—I have a camping set. Let’s go!”
+
+  As I trotted off into the woods, I heard a skeptical “Camping?” It quickly turned to footsteps.
+
+  Away from the stone path, the ground was soft and mossy, with just enough give to be noticeable, but not uncomfortable to walk on. I wove around trunks left and right, trailing the source of the sound. Coming across any monsters here would disrupt our search, so I gave any cursors that popped up in my Search range a wide berth. The last thing I wanted to see was another treant, and fortunately we did not run across any.
+
+  After less than five minutes of jogging, the clanging of metal was much louder than before, joined by shouts and screams. Two NPC cursors appeared directly ahead, followed by the flashes of colliding swords peeking through the branches.
+
+  One more massive tree trunk, and we’d be at the battleground. I stopped before we rounded the tree and held Asuna back with an outstretched arm, holding up my index finger in a shushing motion. We leaned around the trunk to peer at the same time.
+
+  Two silhouettes were locked in fierce combat in the middle of a wide clearing.
+
+  One was a tall man wearing gleaming metal armor of gold and green. Even at a glance, it was clear that his longsword and buckler were high-level equipment. His long, platinum blond hair was tied at the back, and his face was that of a dashing Scandinavian lead actor in a Hollywood film.
+
+  The other combatant stood out in stark relief, with black-and-purple armor. The curved saber and small kite shield were dark in color but equally powerful. The fighter’s hair was short and smoky purple, which combined with darkly tanned skin, was strikingly beautiful. Luscious red lips and a swelling curve on the breastplate made it clear that the dark fighter was a woman.
+
+  “Haah!”
+
+  The blond man let out a fierce roar and swung down his sword.
+
+  “Shaa!”
+
+  The purple-haired woman struck back with her saber. A fierce clang echoed throughout the clearing, and the flashing light effect lit the deep forest for an instant.
+
+  “A-are those…really NPCs…?” Asuna murmured below me, her voice filled with wonder.
+
+  I understood how she felt. Their precise movements and realistic expressions were so lifelike, it was hard to see them as soulless avatars under the control of the game system. But…
+
+  “Technically, they’re classified as mobs. Look at their ears.”
+
+  “Huh…? Oh! They’re both pointy. Which means…”
+
+  “The man is a forest elf. The woman is a dark elf. Look above their heads.”
+
+  Asuna’s eyes traveled up a bit. She murmured in surprise again.
+
+  Both warriors had a golden ! mark above their heads. That was proof that they were quest-initiating NPCs. Normally, walking up and starting a conversation would automatically open up a quest log. But in this case…
+
+  “What does it mean that they both have quest marks and are fighting each other…?”
+
+  “It’s simple—you can only accept one. I need you to make a very important choice here, Asuna,” I said. She took her eyes off the elves and looked at me.
+
+  “A choice?”
+
+  “Yeah. The quest they’ll give us isn’t a one-off quest, or even a series of quests. It’s the first major campaign quest in the game. It lasts through several floors and won’t wrap up until we get to the ninth.”
+
+  “N—”
+
+  Ninth?! she was going to scream, but clamped her mouth shut in time. Her hazelnut-brown eyes were wide with shock. Secretly enjoying her surprise, I added another bombshell.
+
+  “And if you screw up along the way, there are no do-overs. No switching to the opposing side, either. The choice you make here is going to last us until the ninth floor of Aincrad.”
+
+  “Excuse me…Couldn’t you have told me this earlier…?” Her face went from anger to indecision. “Wait, opposing side? Does that mean those two elves…?”
+
+  “Exactly. We have to choose one to save and one to fight. Which one will it be: black or white?”
+
+  Asuna gave me a scorchingly appraising look. “This isn’t a real choice, is it? Maybe if this was a regular game, but not now. We have to follow the same route you took in the beta. In fact…I’m positive that I can guess exactly which one you chose.”
+
+  Now it was my turn to clam up uncomfortably. Her cold gaze bored into my face, and she spoke with absolute conviction.
+
+  “You chose the dark elf lady, didn’t you?”
+
+  “Y-yes, I did…b-but not because she was a lady. Because she was dark.”
+
+  But I knew that excuse wouldn’t fly. Asuna stood up straight and turned away in a huff.
+
+  “Well, fine. I would never take the side of a man to cut down a woman, anyway. Let’s help out the dark elf and defeat the forest elf. Agreed?” She hurried to pop out of our hiding spot, but I grabbed the back of her hood first.
+
+  “W-wait, wait, wait. One important thing first!”
+
+  “What?”
+
+  “Well, um…Just so you know, even if we help the dark side, there’s no way we can beat the forest elf.”
+
+  “Wh…what?!”
+
+  Her eyes went wide. I put a hand on her slender shoulder to calm her down. “As you can probably tell from the tough-looking gear, they’re both elite mobs. You don’t find Forest Elven Hallowed Knights or Dark Elven Royal Guards until the seventh floor. No matter how much of a safety margin we’re working with, we only just made it to the third floor. We can’t win.”
+
+  “Then…what do we do? I mean…if we die in this fight…”
+
+  “Don’t worry, there’s no death if we lose. Once we’re down half our HP, the fighter we’re helping will use her secret attack to win. We just have to keep focused on defense. Don’t panic when he starts chopping our HP away, just stay calm and wait for the lady to do her thing. Losing con
+trol and running around is the worst thing that can happen here—you never know when you might pull in a nearby mob by accident.”
+
+  “…All right.”
+
+  “Good.” I patted her shoulder and let go. “Then we’ll jump out on the count of three. The quest starts automatically when we get near, so just stay next to me.”
+
+  She nodded in understanding, and I lined up next to her, counted to three, and said a silent apology.
+
+  There was one thing I hadn’t told Asuna. When we jumped in to save the dark elf—her name was Kizmel—she would unleash her forbidden art to save us from the forest elf knight, dying in the process. If we chose the opposite route and helped the forest elf, he would do the same thing. No matter the choice, both elves would die in this clearing, and we’d be embroiled in the war of the two races. That was the start of a long, long campaign…an epic tale.
+
+  “…Two, one, go!”
+
+  We leaped out into the clearing. The battling elves looked at us momentarily, then jumped backward to keep distance between them. Each of the ! marks turned into a ? to indicate a quest in progress.
+
+  “What is humankind doing in this forest?” the male elf demanded.
+
+  “Do not interfere! Begone from this place!” ordered the dark elf.
+
+  We had the option of leaving, of course. But that was beside the point of being here. Asuna and I made eye contact, drew our swords—and leveled the points at the gaudy forest elf’s chest.
+
+  His handsome features grew cold and furious. The yellow event-related mob cursor gained a blinking red border, a warning that the target was about to turn aggressive.
+
+  “You fools…For the crime of siding with this dark elf scum, your blood will quench my sword’s thirst.”
+
+  “That—”
+
+  “That’s right, but it’s you who will perish, you wife-abusing pig!” Asuna retorted, stealing my one-liner and adding a dubious charge of domestic abuse. The forest elf’s cursor shifted from pale yellow to a menacing dark crimson. Before I could even note the foreboding tint of red, the man put on a beautiful but haughty smile.
+
+  “So be it! I will start with you, humans.”
+
+  “Remember, just focus on defense!” I called out to Asuna, focusing on his longsword.
+
+  Of course, we’ll only last three minutes at best, I silently added. But when I glanced over at my partner’s face, I felt a distinct sense of unease. Even in the short time I’d known her, I could recognize the expression she was wearing now: the one that said she was dead set on something.
+
+  “Um…focus…defense?”
+
+  “I know, I know!” she snapped, but there was a ferocious glint to the rapier clutched in her right hand.
+
+  Twenty minutes later.
+
+  “This…can’t be happening…” the forest elf muttered as he collapsed to the ground.
+
+  “This…can’t be happening…” I repeated, blinking in surprise as I checked to confirm that his HP bar did indeed read zero. In contrast, both Asuna and my HP bars were at half, just before we would reach the yellow zone. During the beta, I’d been in a party of four, and we’d been thrashed in just two minutes.
+
+  “…Well. He wasn’t so tough, after all.”
+
+  I looked over to see Asuna, back straight despite her obvious fatigue. A few feet to her left was the dark elf, dark saber and gaze pointed right at the fallen foe.
+
+  Ya shoulda died, missy, echoed a mysterious, unsourced phrase inside my head. Kizmel the dark elf knight looked up at me.
+
+  Her onyx eyes seemed to be filled with shock, bewilderment, and an unanswered question of what she should do next. But that had to be my imagination.
+
+  I prayed it was my imagination.
+
+
+  IF THIS QUEST, THE “JADE KEY,” HAD DEVELOPED AS IT happened in the beta, the following should have occurred.
+
+  Whether we allied with the forest elf or the dark elf, ultimately both would end up dead. The elf we sided with would remain alive for a few seconds extra, long enough to say, “Deliver this key to such and such,” before perishing. The such and such being either the forest elf base on the north end of the woods or the dark elf base to the south. Once the bodies had vanished, a small bag of sewn leaves would be left behind, containing a large and beautiful key carved of green stone.
+
+  At that point, of course, the player was to take the key to the northern or southern camp; they could sell it at an NPC shop if they wished, but that would permanently prevent them from finishing the quest. If properly delivered without falling into temptation, the commander at the elf base would part with a special reward and the initiation of the next quest.
+
+  But I had no idea there was a different branching pathway in the quest, one in which the elf ally survived the battle. If I didn’t know it, no one else did—even Argo. We had to expect a totally new and unfamiliar story ahead.
+
+  A short distance away from me, Asuna, and the still-silent dark elf Kizmel, the forest elf’s body disappeared with a brief crackle. We received considerable amounts of experience and col, along with a couple rare items, but I didn’t have time to check that now.
+
+  A familiar bag of leaves was lying on the ground where the forest elf’s body had been. Abandoned items had to be claimed soon, before they disappeared into thin air, but I wasn’t even sure if I was supposed to pick this one up. What if I touched it, and that was the trigger that turned Kizmel hostile?
+
+  “Umm…gee, what’s this?” I said unconvincingly. Asuna bent down to pick up the key as though nothing was out of the ordinary, so I hastily grabbed the hood of her cape, which earned me a furious glare. Finally, Kizmel reacted.
+
+  She bent over and cradled the bag carefully in her black leather gloves. An exhalation of relief left her lips as she held it to her chest.
+
+  “…At least we can protect the sanctuary now,” she murmured to herself, put the bag in her waistpouch, and stood up to face us. The subtle way the ferocity returned to her eyes despite her wavering hesitation didn’t seem possible for a mere simple system-controlled object.
+
+  “I must thank you,” she said, her armor clanking as she bowed in salute. “The first secret key has been protected. Your assistance is appreciated. Come with me to our base, and the commander will wish to reward you for your help.”
+
+  Again, a ? appeared over her head to indicate quest progress. I was inwardly relieved, though I did my best not to show it. It seemed that the quest would proceed as normal, even after we beat the forest elf ourselves.
+
+  However, my original plan was to butt into their fight, let both elves perish, get the key, and return to the main town. We hadn’t taken a break to refresh and resupply since beating the second-floor boss. The elation at reaching a new floor was masking my fatigue, but exhaustion here was mental rather than physical and hit the player like a ton of bricks out of nowhere. My current partner Asuna had passed out from extreme exhaustion right after our first meeting down in the first-floor labyrinth. While it was rare to get that far, lapses of concentration led to mistakes, and controlling that fatigue safely was a vital tool for any solo player.
+
+  I peered sidelong at the fencer. She took a step forward without a glance at me and spoke to Kizmel herself.
+
+  “In that case, we’d be honored.”
+
+  “…”
+
+  I wasn’t the only one who held my tongue. Kizmel stared at Asuna in silence. NPCs in Aincrad—technically, the dark elf Kizmel was classified as a mob—did not respond to player comments unless they came in a clear yes or no form.
+
+  I coughed awkwardly, ready to give a simpler answer, but before I could get the words out of my mouth, the knight nodded and spun around.
+
+  “Very well. The base camp is through the south end of the woods.”
+
+  My quest log updated, and the ? over her head vanished. At the same time, a message appeared to the upper left indicating that a third party member had joined, and a fresh new HP bar was added to the list.
+
+  Kizmel strode off coolly, and Asuna sprang after her. I stood rooted to the spot for three seconds before hurrying off to catch up.
+
+  The elf must h
+ave picked up an affirmative nuance from Asuna’s reply. But as far as I knew, the NPCs in the beta test had nowhere near that kind of conversation ability.
+
+  Perhaps it was as simple as the NPCs’ response database being expanded between the end of the beta and the start of the retail game. But something about Kizmel’s speech and expressions felt too natural for that to explain it. She was just like any other player.
+
+  I walked at the rear of the three-man team, examining her color cursor just to be sure. It was the yellow of an NPC—technically, an event mob—and her name was listed as KIZMEL: DARK ELVEN ROYAL GUARD. Players weren’t allowed to replicate monster titles within their names, so this was proof that Kizmel was indeed nothing more than a moving object controlled by the system. If SAO was a normally functioning game, there might be a faint chance that she was actually being played by a member of the game staff, but that couldn’t be true now that it was deadly.
+
+  …It must be my imagination.
+
+  I sped up to draw even with the two women.
+
+  Being an overpowered beater might have created a dangerously unpredictable set of circumstances in this case, but there was one way in which it was a definite improvement.
+
+  Reaching the dark elf base required venturing off the path and through the woods, increasing the chances of enemy encounters. And given the thick, obscuring mists that gave the forest its name, it was all too easy to lose sight of one’s location.
+
+  But Kizmel served us valuably in more ways than one: Her saber made quick work of any foes who happened across our path, and as an elf, she seemed to know exactly which way to go through the heavy mist. As an admirer of efficiency, I considered taking this opportunity to wander around and fight more mobs with Kizmel, but I thought better of it. I didn’t want to give the proud, elite elf warrior a reason to be angry with me.
+
+  So it only took fifteen minutes of hiking through the misty forest to reach the sight of many black flags rippling in the breeze.
+
+  “That didn’t take very long,” Asuna said next to me, and I had to reluctantly agree. Kizmel stopped marching and turned around to face us. She spoke with what I thought was a note of pride in her voice.
+
+  “A Forest-Sinking charm has been cast on the camp. You would not have found it so easily without me.”
+
+  “Ooh, a charm? Is that like magic? I thought there wasn’t any magic in this world,” Asuna boldly remarked. I felt a chill run down my back. Aside from her overly informal tone, I wasn’t sure if what Asuna said was even understandable to the NPC and her preset array of responses. It felt like Kizmel might not be able to answer it, even if she understood the meaning.
+
+  The reason magic didn’t exist in SAO was to allow the player to experience melee combat firsthand in the VRMMO environment—they didn’t want to turn it into a long-distance shooter.
+
+  “Listen, Asuna, that’s not…” I started, trying to help Kizmel out by explaining the concept. But once again, my consideration was totally unnecessary.
+
+  “…Our charms are not up to the level of magic,” the dark elf said, her long eyelashes low. “If anything, they are just a faint afterglow of the great magic of old. When we were cut free from the earth, the people of Lyusula lost all magic…”
+
+  The shock of what she’d said hit me five seconds later—that was as long as it took to actually process what she’d said.
+
+  We lost all magic because we were cut free from the earth.
+
+  I had a feeling that she wasn’t just giving an explanation of why magic skills didn’t exist in Sword Art Online. This might be something that corresponded directly to the existence of the floating castle, Aincrad.
+
+  Now that I thought about it, I’d never had any exposure to the background story of SAO. I tore through countless articles and interviews after the game was first announced, but nothing more was said about the setting other than that it was a floating castle in the sky made of a hundred floors with their own little world maps. This was strange, because whether single player or multiplayer, the background story of an RPG, of how the world came to be, was usually just as important as the concrete game system itself.
+
+  Even in the beta test, the background of the world was opaque. I completed this campaign quest back then, but I recalled the story being rather simple and unconnected to the origins of Aincrad—the forest elves and dark elves were fighting over some holy “sanctuary,” whatever that actually was.
+
+  When the retail game launched and promptly trapped all of its guests inside, I felt like I understood why the background of SAO was such a blank slate.
+
+  The lack of story, of any kind of descriptive background, was a challenge from the developer himself. Kayaba was telling us, The stage is set; it’s up to you to create the story now.
+
+  That was just my imagination talking, of course, but it didn’t seem very farfetched at this point. In that case, the words of Kizmel the elf knight—as an extension of the SAO system—surpassed even Kayaba’s intentions.
+
+  I was possessed by an urge to overwhelm the elven knight with questions as we walked. Whether this “Lyusula” was a continent, a kingdom, or a city. Why the dark elves were torn from their home. Why they were trapped here in this floating castle. What this castle really was, and why it had been built.
+
+  Most likely, none of that information had any bearing on our primary goal: beating the game and returning to reality. The only reason I had started this campaign quest was for the plentiful experience points and high-level rewards. There was no emotional attachment to the dark elf forces. If Asuna had insisted, I would have sided with the forest elf man against Kizmel earlier.
+
+  I stifled my sudden burst of curiosity with a deep breath and continued my silent march behind the knight.
+
+  As we approached the swirling black flags, the mists suddenly cleared away as though they’d never been there, and my field of vision returned.
+
+  We were very close to the southern end of the forest; sharp-cut rock walls extended left and right. A narrow passage barely fifteen feet wide proceeded through the rock, slim pillars on either side. Atop the poles flew the landmark black flags, adorned with crests of horns and blades.
+
+  Standing before the two poles were dark elf soldiers, proudly bearing glaives and wearing heavier armor than Kizmel’s—though still light compared to the variety available to players. Our companion strode up to the guards.
+
+  When I did this quest in the beta, Kizmel had perished against the forest elf, and our party of four had to approach these guards without a go-between. But it was this situation that had me more nervous. Asuna leaned over and whispered, “I might as well ask…We’re not going to have to fight in this base camp, are we?”
+
+  “We won’t…We shouldn’t. As long as we don’t attack any of them, at least. Or maybe they just cancel your progress and kick you out…”
+
+  “You’d better not attempt to find out.” She glared at me, then summoned her courage and picked up the pace.
+
+  Fortunately, the guards did nothing worse than glare suspiciously as we passed them. After a short walk through the narrow passage, it opened wide into a round space a good fifty yards across. About twenty tents of black and purple in various sizes filled the space as glamorous dark elves strode about the grounds—all in all, an impressive sight.
+
+  “Wow…the camp’s a lot bigger than it was in the beta,” I murmured, quiet enough so Kizmel couldn’t hear. Asuna looked at me doubtfully.
+
+  “Was it in a different place before?”
+
+  “Yeah, but that’s not a strange thing. Most of these locations related to the campaign are temporary instances.”
+
+  “Inse…tanse?”
+
+  Asuna had brushed up furiously on her gaming lingo in the last month, but this term was unfamiliar. I explained as we walked toward the largest tent in the back of the canyon.
+
+  “It’s a location that’s created temporarily for each party taking on the quest, I guess you could say. See, we’re going to talk to the dark elf leader to advance the quest, but if another party comes along, that makes it complicated, doesn’t it? Some quests are like the ‘Herbs of the Forest’ quest on the first floor, and they just shut off the area from general access if someone’s talking to the NPC.”
+
+  “So…you’re saying that you and I have temporarily vanished from the third-floor map to move to this base?”
+
+  “That’s right,” I said, impressed by the speed of her understanding.
+
+  She narrowed her eyes and gave me a searing look.
+
+  “We can leave anytime, right?”
+
+  The proceedings had been rather irregular, but the meeting with the commander of the dark elf advance forces went smoothly. Of course, being presumably stronger than Kizmel, the commander could have slaughtered us in seconds if anything went wrong.
+
+  He was delighted at the safe return of Kizmel and the Jade Key, granting us considerable rewards and equipment. Even better, we had our choice of several items. The saber decorated like Kizmel’s sword drew my eye, but my Anneal Blade + was stronger, so I settled on a ring that added a point to strength. Asuna made a similar decision, choosing an earring with + to agility.
+
+  The commander finished by initiating a new quest, the second leg of the campaign, and Asuna and I left the tent.
+
+  Back in the grassy canyon, the ceiling formed by the floor above that acted as our sky was turning the color of sunset. It had to be close to five o’clock. Now that my nerves had eased, fatigue was thudding down. It was time to rest for the day.
+
+  Kizmel stretched in a realistically natural way and turned to us, a hint of a smile on her lips.
+
+  “Warriors of humankind, allow me to thank you again for your help. I hope that you will assist in our next operation.”
+
+  “W-we’d be happy to help.”
+
+  “Now that I think on it, I have not heard your names yet. What are they?”
+
+  My eyes nearly bugged out of their sockets again. I’d never been asked my name by a mob before—no, I couldn’t keep treating her like a monster. She was an NPC.
+
+  “Um…my name is Kirito.”
+
+  “Ah, your human names are difficult to pronounce. Is it…Kirito?” Her intonation was slightly off, so I repeated myself.
+
+  “Kirito.”
+
+“That’s perfect.”
+
+  That must have been the system sequence to fine-tune name pronunciation. Somewhat relieved that she was finally doing something recognizably NPC-like, I watched Kizmel repeat the process with Asuna.
+
+  Once she was satisfied she’d learned the way our names were said, the lady knight continued, “Kirito, Asuna, please call me Kizmel. I will leave the timing of our departure up to you. If you wish to return to your human town, I can send you nearby with another charm, or you can spend the night in one of our tents.”
+
+  Finally, something going exactly as I remembered, I thought.
+
+  Back in the beta, I took a fair number of naps in the tents to save time on the travel back to town. The beds were nice, the food was good, and most importantly, both were free. It only lasted while the quest was active, but it would be a waste not to take advantage of that value.
+
+  Asuna read my mind like a book. With an exasperated shrug of her shoulders, she answered, “In that case, we will gratefully accept your hospitality.”
+
+  “Perhaps you should save your thanks. After all…”
+
+  That’s right, this is how it…wait, that’s not right.
+
+  At this point, we’d been granted the use of an empty tent, as its owner had died at the start of the quest. In other words, it was originally Kizmel’s sleeping chamber that me and my three party members (all men) had borrowed. But now the lady knight was alive. Which meant…
+
+  “…without a spare tent, you will need to share mine. It will be a tight fit for all three of us, but you are welcome.”
+
+  “No, we’d be happy to—three of us?”
+
+  Asuna stopped still. Kizmel seemed to be waiting for a more definitive statement, so I picked up the slack.
+
+  “Thank you. We’d be happy to use it.”
+
+  “Good. I will be here within the grounds, so call upon me if you should need anything. So long for now.”
+
+  The proud dark elf bowed again and strode off toward the dining tent. Asuna was frozen in place for three whole seconds, then turned toward me, her face shifting through about three different expressions.
+
+  “Is it possible to back out and have her charm us over to the town?”
+
+  Sadly, I knew the answer already. One of our party in the beta had tried that very thing. As a beater, it was my duty to pass on the information in my pocket.
+
+  “Um…no.”
+
+  As with the base camp itself, Kizmel’s tent had been upgraded significantly since the beta.
+
+  The owner had described it as a “tight fit for three,” but in reality, six of us could have set up beds with room to spare. Thick, luxurious pelts were spread across the ground, easily comfortable enough to sleep on until the morning.
+
+  The tent fabric that served as walls was thick and woven as well, enough to block out all sound from the outside. In front of the center pillar was an oddly shaped heater that emitted an orange glow and pleasant warmth.
+
+  I walked into the center of the pleasant, comfortable space and sat down, sighing in contentment. Lazily, I lifted a hand to open my window and slowly removed my sword and various articles of armor.
+
+  When I rolled onto my back, I accidentally met the cold glare of Asuna. The fencer took a few steps over to me and gently nudged my side with the tip of her boot.
+
+  I submitted to her silent pressure, rolling over and over until I hit the left wall of the tent, at which point Asuna removed her boot.
+
+  “That’s your spot. Imagine there’s a border right here.” She traced an imaginary line with her boot about a third of the way into the tent.
+
+  I had to find out. “And…what happens if I attempt to invade your border?”
+
+  “This camp isn’t considered a safe zone, is it?”
+
+  “I read you loud and clear,” I said, nodding on the ground. She smiled back and walked to the other end of the room. The round tent was about twenty-five feet across, so there was quite a distance from wall to wall. I watched her cross, then remove her breastplate and rapier, shaking out her long hair before she sat atop the furs. She leaned her back against a pillar and mulled something over for a moment before putting her long boots in storage as well.
+
+  Asuna stretched out her long, white-socked feet, looked up at the ceiling, and let out a slow, steady sigh. When she eventually looked over toward me, I was rudely staring back. I glanced away hastily and babbled in a high voice.
+
+  “So, um, I don’t mind sleeping outside, if you prefer. I’ve got a sleeping bag and everything…”
+
+  “It’s fine, as long as you respect the border,” she responded, her voice surprisingly neutral. I hazarded another glance across the tent. Asuna was rubbing the furs on the ground with her hand as she changed the topic to something that had caught her interest.
+
+  “So, about this quest series…I’m not quite sure of the point of it yet. It’s not something about how either the dark elves or forest elves are good or evil, right?”
+
+  “Eh? Um…yeah, that’s right. Assuming the gist of it is the same as in the beta, there’s a floor above with a place called the Sanctuary, with some incredibly powerful item sealed inside of it. And the dark elves and forest elves are fighting over it.”
+
+  “Hmm…So that key in the bag of leaves was to the Sanctuary?”
+
+  “Yep. If I remember correctly, there are six of them in total, hidden across all the floors, so collecting them is the main focus of the quest.”
+
+  “I see…That’s what I was wondering about. You said that when we first spotted Kizmel and the forest elf fighting, we could choose which side to help, right?”
+
+  “I did.”
+
+  “Which means that some players could choose to side with the forest elves, and be working the other side of the story at the same time as us, right?”
+
+  “That’s right,” I said and finally realized what Asuna was getting at. “Oh, and you’re wondering that if we come across players working on the forest elf side while we’re doing the quest…”
+
+  “…maybe we’ll end up competing or fighting with them,” she finished, her eyebrows knitted in concern. I put on an awkward smile to reassure her.
+
+  “Don’t worry, it won’t come to that. It’s not like those quests to kill a certain number of enemies or collect a certain amount of loot, where you have to compete with other players to reach your allotted total. These story-style quests make it so that each player or party has their own independent, um, whatchacallit…”
+
+  I tried to frame it in a way that a beginner to MMOs would understand, but Asuna had already pieced it together.
+
+  “Oh, like this base camp? So a number of different parties can be at different points in the story and reach completely different endings?”
+
+  “Yeah, that’s the gist of it. So we don’t have to worry about groups following the enemy camp’s quest trying to take the items from us. It’s not as if one side completing the quest successfully means the opposing side loses.”
+
+  “Ahh…”
+
+  Asuna nodded in apparent understanding, but her expression did not clear up in a way that suggested her fears had been eliminated. She heaved herself back up to sitting position and crossed her legs, facing me directly.
+
+  “Something still bothering you?”
+
+  “Umm, I’m not sure if it’s bothering me or just hard to grasp. If you’re right, and this base camp…instance? If a different one exists for every party doing the quest, then that means the same number of Kizmels and commanders exist, too. That seems kind of…”
+
+  “Ah, yeah…”
+
+  I finally understood the nature of Asuna’s confusion; it was the greatest contradiction of questing in an online game. Normally, an incident should only arise once. For instance, in the “Herbs of the Forest” quest from the first floor, the sickly girl Agatha required special healing herbs that could only be collected from plant-type monsters. I handily—okay, it wasn’t quite that easy—collected all of the quest materials, Agatha’s mother brewed a medicine from them, and the girl recovered.
+
+  But the next player who visited that house would find a sickly Aga
+tha. As long as there were players to accept the quest, she was locked in an eternal cycle of painful disease and recovery.
+
+  The campaign quest Asuna and I had started was an expanded version of that concept. After a twenty-minute battle, we defeated the forest elf knight and saved Kizmel’s life, but as more players took on the quest after us, dozens, if not hundreds of Kizmels would die, along with a similar number of handsome forest elves.
+
+  But that was unavoidable. If each quest was only playable by one player or party for the sake of story consistency, the game would lose all pretense of fairness. It might be one thing to sidestep that by creating an infinite number of unique quests, but that was not realistically possible—even for a mad genius like Akihiko Kayaba.
+
+  When I finished explaining all of this to Asuna, she nodded slowly and thanked me for the information, but I suspected she’d known it all along. Like her, there was something about this that still sat wrong with me. After all, for an event-related NPC, Kizmel was all too human—or elvish.
+
+  A lonely, plaintive horn blew within the camp. I checked my clock and saw that it was already six o’clock. Plagued by equal parts sleepiness and hunger, I was wondering which of the two to address when the flap of the tent entrance lifted open.
+
+  It was Kizmel, the owner of the tent. She was still dressed in her gleaming metal armor and long cape. Asuna and I hastily scrambled to our feet. Kizmel looked at each of us in turn and said, “I’m afraid I cannot offer you much at this humble camp, but you are free to use this tent however much you wish. The dining tent will serve you food anytime you need it, and there is also a simple tent for bathing.”
+
+  “You have a bath?” Asuna repeated instantly. Kizmel nodded and pointed off to her left.
+
+  “It is next to the dining tent. Again, it is available at your leisure.”
+
+  “Thank you. I’m certainly going to take advantage of that,” Asuna said without hesitation, bowing to Kizmel and heading out the tent flap without a backward glance at me.
+
+  Kizmel strode farther inside and said, “I believe I will have a rest. Just say the word if you need anything.”
+“That’s perfect.”
+
+  That must have been the system sequence to fine-tune name pronunciation. Somewhat relieved that she was finally doing something recognizably NPC-like, I watched Kizmel repeat the process with Asuna.
+
+  Once she was satisfied she’d learned the way our names were said, the lady knight continued, “Kirito, Asuna, please call me Kizmel. I will leave the timing of our departure up to you. If you wish to return to your human town, I can send you nearby with another charm, or you can spend the night in one of our tents.”
+
+  Finally, something going exactly as I remembered, I thought.
+
+  Back in the beta, I took a fair number of naps in the tents to save time on the travel back to town. The beds were nice, the food was good, and most importantly, both were free. It only lasted while the quest was active, but it would be a waste not to take advantage of that value.
+
+  Asuna read my mind like a book. With an exasperated shrug of her shoulders, she answered, “In that case, we will gratefully accept your hospitality.”
+
+  “Perhaps you should save your thanks. After all…”
+
+  That’s right, this is how it…wait, that’s not right.
+
+  At this point, we’d been granted the use of an empty tent, as its owner had died at the start of the quest. In other words, it was originally Kizmel’s sleeping chamber that me and my three party members (all men) had borrowed. But now the lady knight was alive. Which meant…
+
+  “…without a spare tent, you will need to share mine. It will be a tight fit for all three of us, but you are welcome.”
+
+  “No, we’d be happy to—three of us?”
+
+  Asuna stopped still. Kizmel seemed to be waiting for a more definitive statement, so I picked up the slack.
+
+  “Thank you. We’d be happy to use it.”
+
+  “Good. I will be here within the grounds, so call upon me if you should need anything. So long for now.”
+
+  The proud dark elf bowed again and strode off toward the dining tent. Asuna was frozen in place for three whole seconds, then turned toward me, her face shifting through about three different expressions.
+
+  “Is it possible to back out and have her charm us over to the town?”
+
+  Sadly, I knew the answer already. One of our party in the beta had tried that very thing. As a beater, it was my duty to pass on the information in my pocket.
+
+  “Um…no.”
+
+  As with the base camp itself, Kizmel’s tent had been upgraded significantly since the beta.
+
+  The owner had described it as a “tight fit for three,” but in reality, six of us could have set up beds with room to spare. Thick, luxurious pelts were spread across the ground, easily comfortable enough to sleep on until the morning.
+
+  The tent fabric that served as walls was thick and woven as well, enough to block out all sound from the outside. In front of the center pillar was an oddly shaped heater that emitted an orange glow and pleasant warmth.
+
+  I walked into the center of the pleasant, comfortable space and sat down, sighing in contentment. Lazily, I lifted a hand to open my window and slowly removed my sword and various articles of armor.
+
+  When I rolled onto my back, I accidentally met the cold glare of Asuna. The fencer took a few steps over to me and gently nudged my side with the tip of her boot.
+
+  I submitted to her silent pressure, rolling over and over until I hit the left wall of the tent, at which point Asuna removed her boot.
+
+  “That’s your spot. Imagine there’s a border right here.” She traced an imaginary line with her boot about a third of the way into the tent.
+
+  I had to find out. “And…what happens if I attempt to invade your border?”
+
+  “This camp isn’t considered a safe zone, is it?”
+
+  “I read you loud and clear,” I said, nodding on the ground. She smiled back and walked to the other end of the room. The round tent was about twenty-five feet across, so there was quite a distance from wall to wall. I watched her cross, then remove her breastplate and rapier, shaking out her long hair before she sat atop the furs. She leaned her back against a pillar and mulled something over for a moment before putting her long boots in storage as well.
+
+  Asuna stretched out her long, white-socked feet, looked up at the ceiling, and let out a slow, steady sigh. When she eventually looked over toward me, I was rudely staring back. I glanced away hastily and babbled in a high voice.
+
+  “So, um, I don’t mind sleeping outside, if you prefer. I’ve got a sleeping bag and everything…”
+
+  “It’s fine, as long as you respect the border,” she responded, her voice surprisingly neutral. I hazarded another glance across the tent. Asuna was rubbing the furs on the ground with her hand as she changed the topic to something that had caught her interest.
+
+  “So, about this quest series…I’m not quite sure of the point of it yet. It’s not something about how either the dark elves or forest elves are good or evil, right?”
+
+  “Eh? Um…yeah, that’s right. Assuming the gist of it is the same as in the beta, there’s a floor above with a place called the Sanctuary, with some incredibly powerful item sealed inside of it. And the dark elves and forest elves are fighting over it.”
+
+  “Hmm…So that key in the bag of leaves was to the Sanctuary?”
+
+  “Yep. If I remember correctly, there are six of them in total, hidden across all the floors, so collecting them is the main focus of the quest.”
+
+  “I see…That’s what I was wondering about. You said that when we first spotted Kizmel and the forest elf fighting, we could choose which side to help, right?”
+
+  “I did.”
+
+  “Which means that some players could choose to side with the forest elves, and be working the other side of the story at the same time as us, right?”
+
+  “That’s right,” I said and finally realized what Asuna was getting at. “Oh, and you’re wondering that if we come across players working on the forest elf side while we’re doing the quest…”
+
+  “…maybe we’ll end up competing or fighting with them,” she finished, her eyebrows knitted in concern. I put on an awkward smile to reassure her.
+
+  “Don’t worry, it won’t come to that. It’s not like those quests to kill a certain number of enemies or collect a certain amount of loot, where you have to compete with other players to reach your allotted total. These story-style quests make it so that each player or party has their own independent, um, whatchacallit…”
+
+  I tried to frame it in a way that a beginner to MMOs would understand, but Asuna had already pieced it together.
+
+  “Oh, like this base camp? So a number of different parties can be at different points in the story and reach completely different endings?”
+
+  “Yeah, that’s the gist of it. So we don’t have to worry about groups following the enemy camp’s quest trying to take the items from us. It’s not as if one side completing the quest successfully means the opposing side loses.”
+
+  “Ahh…”
+
+  Asuna nodded in apparent understanding, but her expression did not clear up in a way that suggested her fears had been eliminated. She heaved herself back up to sitting position and crossed her legs, facing me directly.
+
+  “Something still bothering you?”
+
+  “Umm, I’m not sure if it’s bothering me or just hard to grasp. If you’re right, and this base camp…instance? If a different one exists for every party doing the quest, then that means the same number of Kizmels and commanders exist, too. That seems kind of…”
+
+  “Ah, yeah…”
+
+  I finally understood the nature of Asuna’s confusion; it was the greatest contradiction of questing in an online game. Normally, an incident should only arise once. For instance, in the “Herbs of the Forest” quest from the first floor, the sickly girl Agatha required special healing herbs that could only be collected from plant-type monsters. I handily—okay, it wasn’t quite that easy—collected all of the quest materials, Agatha’s mother brewed a medicine from them, and the girl recovered.
+
+  But the next player who visited that house would find a sickly Aga
+tha. As long as there were players to accept the quest, she was locked in an eternal cycle of painful disease and recovery.
+
+  The campaign quest Asuna and I had started was an expanded version of that concept. After a twenty-minute battle, we defeated the forest elf knight and saved Kizmel’s life, but as more players took on the quest after us, dozens, if not hundreds of Kizmels would die, along with a similar number of handsome forest elves.
+
+  But that was unavoidable. If each quest was only playable by one player or party for the sake of story consistency, the game would lose all pretense of fairness. It might be one thing to sidestep that by creating an infinite number of unique quests, but that was not realistically possible—even for a mad genius like Akihiko Kayaba.
+
+  When I finished explaining all of this to Asuna, she nodded slowly and thanked me for the information, but I suspected she’d known it all along. Like her, there was something about this that still sat wrong with me. After all, for an event-related NPC, Kizmel was all too human—or elvish.
+
+  A lonely, plaintive horn blew within the camp. I checked my clock and saw that it was already six o’clock. Plagued by equal parts sleepiness and hunger, I was wondering which of the two to address when the flap of the tent entrance lifted open.
+
+  It was Kizmel, the owner of the tent. She was still dressed in her gleaming metal armor and long cape. Asuna and I hastily scrambled to our feet. Kizmel looked at each of us in turn and said, “I’m afraid I cannot offer you much at this humble camp, but you are free to use this tent however much you wish. The dining tent will serve you food anytime you need it, and there is also a simple tent for bathing.”
+
+  “You have a bath?” Asuna repeated instantly. Kizmel nodded and pointed off to her left.
+
+  “It is next to the dining tent. Again, it is available at your leisure.”
+
+  “Thank you. I’m certainly going to take advantage of that,” Asuna said without hesitation, bowing to Kizmel and heading out the tent flap without a backward glance at me.
+
+  Kizmel strode farther inside and said, “I believe I will have a rest. Just say the word if you need anything.”
+
+ I was still idly contemplating whether I should prioritize food or sleep when Kizmel stopped next to the heater and put her hand on the large gemstone that acted as a clasp on her shoulder plate.
+
+  With a strange tinkling sound, her armor, cape, and saber vanished into motes of light. All that was left beneath it was a sheer undergarment that shone like silk. I was so shocked that I couldn’t pull my gaze away. There was a distinctly un-elven volume to the body beneath the black fabric—perhaps that was what made her a dark elf…
+
+  Suddenly, a hand grabbed the back of my collar and an icy voice said into my ear, “You should take a bath as well. You must have gotten sweaty during that boss fight.”
+
+  …Well, I’m certainly feeling a cold sweat now.
+
+  An irresistible force dragged me backward out through the entrance of the tent. Outside, the dark elf camp looked even more fantastical than usual with the transition from late afternoon to evening.
+
+  Here and there about the base were elegantly designed steel mesh cages holding silent, purplish flames. A restrained lute melody was playing from one of the tents, to which the crickets in the grass added their own ringing harmony.
+
+  Even the soldiers’ laughs coming from the large dining tent and the clanging hammer of the elves’ attendant blacksmith seemed like musical instruments adding to the performance. I walked behind Asuna, concentrating on the unfamiliar sounds of the nonhuman camp. Suddenly, I remembered a very important mission and called out to the back of the tunic ahead.
+
+  “Oh, Asuna.”
+
+  “What?”
+
+  She slowed down so I could catch up to her side, but did not stop walking.
+
+  “The NPC blacksmith here is a really high level, so we should upgrade your weapon to its maximum while we can.”
+
+  “…To the maximum? Are you sure?” she replied doubtfully. She must have been recalling the scene of her favorite sword helplessly shattered before her eyes several days ago. Of course, that was only a fake substitute switched in with the Quick Change mod, but she hadn’t known that at the time. The visceral shock still remained in her memory.
+
+  I nodded vigorously to set her at ease. “You might not have a hundred-percent chance of success, but just a few materials should boost the rate to its maximum. If we can get yours to plus six, that should last you through the middle of this floor.”
+
+  Asuna bought her beloved Wind Fleuret just before the strategy meeting for the first-floor boss raid. Statistically, it wasn’t really cut out for the third floor, but if upgraded completely—every one of its limited upgrade attempts successful—it might serve her a little while longer.
+
+  For me, this was a rare prioritization of sentiment over efficiency, but to my surprise, Asuna looked down and mulled it over. Her fingers wandered along her waist, as though searching for the sheath of the rapier that was currently stored away in her inventory.
+
+  “…Remember what you said before? About melting down a sword to use as material for a new one?”
+
+  “Ah…yeah, that’s right.”
+
+  “Could I have that done here, with their blacksmith?”
+
+  “Su-sure, if you want, but…”
+
+  Asuna finally stopped walking and turned to me, causing me to realize I’d stopped already. There was a rare hint of a smile on her face.
+
+  “Thanks for the concern. But if we’re going to brave the risk of attempting to upgrade for a sword I’m just going to get rid of in a few days, I’d rather have it reborn here.”
+
+  “I see…” If that was how Asuna felt, it wasn’t my place to tell her otherwise. “All right. I’m sure it’ll make for a powerful blade. Well, let’s go see that blacksmith’s tent…”
+
+  I headed for the other direction and Asuna grabbed my shirt.
+
+  “The bath comes first!”
+
+  I didn’t remember if the base camp had a bath during the beta. Even if it did, none of our all-male party would have bothered to use it. If we wanted to bathe back then, we could just log out and take a real one. If any of us fell asleep in the tents, it was to enjoy the camping experience, nothing more.
+
+  Even now that we were permanently trapped in here, I wasn’t particularly attached to the idea of bathing, but it was clearly a top priority for my temporary partner. Perhaps if there was a magical hot spring that offered its own buff effect…but in that case, I’d just jump in fully clothed. The sensation of being wet was unpleasant and added a bit of weight, but it wore off soon after you left the water.
+
+  Since this bath was a favorite of the dark elves, perhaps it did have some magical effect of its own. Then again, it might have a negative prank effect, like causing your ears to grow pointier the longer you stayed in the water…
+
+  Asuna and I arrived at a small tent behind the dining area while I pointlessly pondered the effects of elf baths. We stopped and looked at each other—there was only one entrance to the bathing tent, and there was no marking on the swinging flap that designated male or female.
+
+  “……”
+
+  Asuna silently parted the flaps to peer inside, then pulled her head out. “There’s only one bath in there.”
+
+  “I see.”
+
+  Even as a dweeby middle schooler, I knew enough not to joke that this meant we had to bathe together. I put on as serious a face as I could manage and stepped back.
+
+  “In that case, I’ll just go next door and grab a bite while you’re bathing. Take your time, and I’ll come back when you’re—”
+
+  “I asked this before, but are you sure this place is outside of the crime-prevention zone?”
+
+  I blinked a few times, baffled by this seemingly unrelated question, then nodded.
+
+  “That’s right…”
+
+  “Which means it would be dangerous to remove all your equipment here.”
+
+  “W-well, in a general sense, sure…”
+
+  “In which case, it makes sense for one of us to stand guard at the entrance while the other is bathing. We can flip a coin to see who goes first…”
+
+  I finally understood Asuna’s concern. She wasn’t truly afraid of a sudden attack by monsters or enemy players, but the possibility of the male dark elves in camp barging in while she was bathing. It seemed silly to get worked up about NPCs, but I could see her point.
+
+  Given that it was my fault that Argo the information dealer had burst into the bathroom while Asuna was bathing earlier, I ought to be accommodating here. I reached that conclusion in the span of a second and nodded to reassure her.
+
+  “Understood. I’ll take the second turn; you go first.”
+
+  “Thank you.” Asuna grinned and disappeared into the tent with blinding speed. In the brief moment the flap was raised, I saw an elegantly carved bathtub filled to the lip with pale green water. The only thing separating the bathing area from the outside world was a simple cloth door that hung loose in the wind.
+
+  It was easy to see why a girl would feel uncertain about bathing on her own in such circumstances. If it was that bad, she probably didn’t need to take a virtual bath, I thought, but she had her own priorities. In a world where death lurked around every corner, there had to be some way to relax and let all that accumulated stress ease away. I needed to find my own way to refresh while we were here in the safety of camp.
+
+  I sat down and leaned back against a support pillar. From beyond the simple layer of canvas, I heard two small swishing sounds. Those had to be the commands to remove all clothes, then all underwear. There was a splash, then a contented sigh.
+
+  “…How can anyone relax like this?” I growled at myself, folded my arms, and assumed a Zen sitting position.
+
+  SAO had a Meditation skill but not a specific Zen skill. I prided myself on my ability to focus my concentration, however. I might not be able to fully relax here, but I could at least dedicate my mind to my future build choices and equipment upgrade paths…
+
+  “Mmm-mm-mm, hmm-hmm” came a faint humming to my ears, obliterating all concentration.
+
+  At this point, it seemed like the only possible solution to this quandary was if the pillar failed to support my weight, sending me tum
+bling backward into the tent. But the thick log stayed firm, lodged concretely into the ground.
+
+  The mental assault of splashing and humming continued unabated for the next thirty minutes.
+
+  
+
+  MY EYES OPENED AS SUDDENLY AS A BUBBLE POPPING on the water surface.
+
+  It was still night; the only sound was insects. The lute playing as I drifted off to sleep was no more, and neither were the voices and footsteps of the soldiers, or the hammering of the blacksmith’s anvil.
+
+  I shut my eyes, considering going back to sleep, but within a few seconds, I was fully awake. Abandoning my attempt to rest, I sat up.
+
+  Across the tent, the fencer was fast asleep, her posture pristine. But I didn’t see Kizmel in the space between us, where she should have been.
+
+  After my temporary partner had finished her bath, I had slipped in for my own and was out of the water by the count of a hundred. Fortunately, neither of us had grown pointy ears after using it. We moved over to the dining tent with the surprisingly friendly elf soldiers and dined on lightly baked bread, roast chicken, vegetable soup, and fruit. When we returned to Kizmel’s tent, I felt highly satisfied.
+
+  We found the tent’s owner already curled up in the blankets and sleeping peacefully. The moment I saw that, all of my fatigue from earlier came flooding back, and the two of us silently took our corners of the tent and lay down on the furs. I remembered pulling a nearby blanket up to my chin, and nothing after that.
+
+  My menu window said that it was two in the morning. No wonder I felt awake—I’d gotten a solid seven hours of sleep. Taking care not to make any noise, I closed the window and slipped out of the blankets.
+
+  When I passed through the hanging flap of the tent, the night lamps of the camp were mostly out, leaving the area lit by pale moonlight. A quick scan of the area showed no one moving except for two sentries marking the walls.
+
+  So where could Kizmel have gone? Perhaps onward to the next quest on her own? I shook my head—an NPC wouldn’t be that independent, and her HP bar listed next to Asuna’s and mine was still full.
+
+  I thought it over, then decided to head for the one part of the dark elf base I hadn’t visited yet: behind the commander’s tent at the very back of the clearing.
+
+  The moonlight in Aincrad was bright enough in any place open to the sky to make it easy to walk around. The moon itself was out of sight unless you were close to the outer perimeter, of course, so its light was reflecting off the lower side of the floor above, but that just gave the blue glow an even more unearthly beauty.
+
+  I headed east around the great command tent and stopped when the space behind it came into view. It was a tiny, grassy stretch with a single tree. I recalled it being an entirely empty, dead space in the beta.
+
+  But now there were three new objects beneath the long branches of the tree. Three simple but beautiful grave markers carved of wood.
+
+  The woman I’d been searching for was standing before the leftmost grave. She was in a tunic and tights now—not the underwear from earlier, but still without her signature armor. She was downcast, staring at the base of the grave. In the light of the moon, her smoky-purple hair was glowing lilac.
+
+  After a few seconds of hesitation, I slowly approached, stopping several feet away. The dark elf knight noticed my footsteps and looked up at me.
+
+  “…Kirito. The morrow will be difficult if you don’t get your rest,” she whispered.
+
+  “I slept better than I usually do. Thanks for letting us use your tent.”
+
+  “I don’t mind. It is too large for me alone,” she responded, then looked back to the grave.
+
+  I took two more steps and examined the marker. There were small words carved into its fresh, unfinished surface. I squinted and made out the name Tilnel.
+
+  “Tilnel…?” I said aloud and noticed that it sounded very similar in rhythm to Kizmel.
+
+  She paused, then said, “My sister. She lost her life in the first battle after we descended to this floor last month.”
+
+  The phrase descended to this floor indicated that the dark elves—and likely the forest elves as well—understood that the floating castle Aincrad was made of numerous stacked floors. Not only that, they could use their magical charms to sidestep the system of labyrinth stairs and town teleport gates. Perhaps their movement range was limited from this floor up to the ninth.
+
+  I’d had this basic knowledge of the elves since the beta, when I completed the campaign quest for the first time. But I was so preoccupied getting further into the game than anyone else at the time, it never occurred to me that the battle between the elves might tie into the game world itself.
+
+  I was struck by the sudden urge to ask Kizmel how Aincrad came to be, but I held it in with a breath of cool night air. It wasn’t fair to ask such an important question while Asuna was absent, and this wasn’t the time to ask, anyway.
+
+  Instead, I asked about Kizmel’s late sister.
+
+  “Was Tilnel…a knight, too?”
+
+  “No. My sister was an herbalist. Her job on the battlefield was to tend to the wounded. She never carried anything larger than a dagger. She was at the rear vanguard when the forest elves’ falconers ambushed us from behind…”
+
+  “……”
+
+  I grimaced and held my breath. The Forest Elven Falconers were the worst mobs on the third floor after the bosses and event enemies. The dark elves had their own Dark Elven Wolfhandlers, but the falconers were the bigger danger, given that they could attack you from ground and air simultaneously.
+
+  However she chose to interpret my silence, Kizmel’s tense profile eased somewhat.
+
+  “I have no chairs or blankets, but you ought to sit. There’s no need to stand around.”
+
+  “Um…sure.”
+
+  I sat down next to her. The thick, soft grass of this tiny graveyard supported my weight with ease.
+
+  The knight picked up a leather skin sitting next to her, pulled out the plug, and took a swig, then passed it to me. I thanked her and accepted the drink, temporarily forgetting that I was interacting with an NPC rather than another person.
+
+  When I put my lips to the skin, a thick liquid flooded between them. It was slightly sweet and sour, and when I finished, there was a burning like alcohol in the back of my throat that felt fresh and cool.
+
+  I handed back the skin. Kizmel held it out over the grave and poured the rest of the liquid onto Tilnel’s grave marker.
+
+  “This was her favorite: moontear wine made of moontear herbs. I snuck some out of the castle, hoping to bring it to her. In the end, she never had a sip…”
+
+  The empty skin slipped from her hand and plopped lightly on the grass. Kizmel crouched, lining her knees together and hugging them tight.
+
+  “When I accepted the mission to retrieve the Jade Key yesterday, I was prepared to die. Part of me might have hoped for it. At best, I might have taken that forest elf down with me, otherwise I would simply have lost…But fate helped you guide me away from my death. And after I had sworn that no gods existed in this forsaken place anymore…”
+
+  Kizmel glanced over at me. I noticed that her onyx eyes were moist and was at a loss for how to react. Kizmel and her sister Tilnel were residents of this world, risking their lives for the sake of their people, and I was nothing but a temporary visitor, an outsider…
+
+  But in truth, that was not the case anymore. Asuna and I were trapped in this game now. Just like Kizmel, we had only one life to give. And yet, when we inserted ourselves into the fight between her and the forest elf knight, I’d foolishly rested on my laurels, convinced that once we were half-dead, the dark elf would sacrifice herself to let us win.
+
+  It had been wrong of me to draw my sword with that mind-set. Whether I knew what would happen or not, I should have fought with all of my ability. To protect my own life and the lives of Asuna and Kizmel.
+
+  Biting back a sudden flood of regret, I said, “It wasn’t the gods. Asuna and I were there of our own will. We’ll stick with you until the end. Until you get back home.”
+
+  The dark elf knight grinned. “In that
+case, I will do my best to protect you. Until our paths part.”
+nest was generated randomly, so my memory was of no use here. We just had to trek through the forest, fighting spiders until we narrowed down their source.

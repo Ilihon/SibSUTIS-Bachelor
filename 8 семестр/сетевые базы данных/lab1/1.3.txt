@@ -1,0 +1,7 @@
+declare
+max_date date;
+begin
+select max(odate) into max_date from ord;
+dbms_output.put_line('Max date = ' || max_date);
+end;
+/

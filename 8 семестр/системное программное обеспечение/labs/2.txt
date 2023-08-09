@@ -1,0 +1,50 @@
+#!/bin/bash
+
+DIR=""
+FILE=""
+FILENAME=""
+COMPIL=""
+RUN=""
+
+while [ -n "$1" ] ; do
+	echo “Имеется параметр –“ $1
+	if [ "$1" == "-d" ] ; then
+		DIR=$2
+		shift
+	fi
+	if [ "$1" == "-f" ] ; then
+		FILE=$2
+		shift
+	fi
+	if [ "$1" == "-c" ] ; then
+		COMPIL="true"
+		shift
+	fi
+	if [ "$1" == "-r" ] ; then
+		RUN="true"
+		shift
+	else
+		shift
+	fi
+done
+
+if [ "$DIR" != "" ] ; then
+	ls $DIR
+fi
+if [ "$FILE" != "" ] ; then
+	cat $FILE
+else
+	cat ~/.bashrc
+fi
+if [[ "$COMPIL" == "true" ]] ; then
+	if [[ "$FILE" == *".c" ]] ; then
+		FILENAME=${FILE%".c"}
+		echo $FILENAME
+		gcc -Wall -o $FILENAME.o $FILE ;
+		if [[ "$RUN" == "true" ]] ; then
+			./$FILENAME.o;
+		fi
+	else
+		echo "это не .с файл"
+	fi
+fi

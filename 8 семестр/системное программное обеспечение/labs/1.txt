@@ -1,0 +1,27 @@
+1)
+function New-1535Files([Parameter(ValueFromPipeline)]$C){
+    1..1535|ForEach{
+        While(!(New-Item (-join([Char[]]"afgtdUHS45B-7634kLqO"|Get-Random -Count $C)) -ea 0)){}
+    }
+}
+5..17|Get-Random|New-1535Files
+
+------------------------------------------------------------------------------------------------
+2)Get-ChildItem -Path C:\Windows\ -Filter "*-*"
+
+------------------------------------------------------------------------------------------------
+
+3) пока хз
+
+------------------------------------------------------------------------------------------------
+
+4)
+$folder = 'C:\Users\zubov\cpo1\1_3'
+$i = 1
+ 
+foreach ($item in Get-ChildItem -Path $folder -File | Sort-Object -Property Name)
+{
+    $NewName = $i.ToString().PadLeft('3','0') + $item.Extension
+    Rename-Item -Path $item.FullName -NewName $NewName
+    $i = $i + 1
+}

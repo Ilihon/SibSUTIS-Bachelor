@@ -1,0 +1,12 @@
+declare
+found varchar2(20);
+begin
+select city into found from sal
+where city = 'Rome';
+exception
+when others then
+— status := 'Ошибка';
+— return_code := 99;
+DBMS_OUTPUT.PUT_LINE('Ошибка, Данные не найдены');
+end;
+/
