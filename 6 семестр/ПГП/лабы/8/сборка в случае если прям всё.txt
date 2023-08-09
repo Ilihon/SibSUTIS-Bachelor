@@ -1,0 +1,2 @@
+nvcc lab81.cu -lcublas -o 81
+nvcc lab82.cu -lcufft -o 82
