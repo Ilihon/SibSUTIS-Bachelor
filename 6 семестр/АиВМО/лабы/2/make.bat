@@ -1,0 +1,1 @@
+g++ -O2 -Wall -std=c++14 -Wl,--stack,41943042 main.cpp fractions.cpp -o main.exe
