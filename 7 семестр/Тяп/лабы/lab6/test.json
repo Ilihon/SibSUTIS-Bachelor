@@ -1,0 +1,16 @@
+{
+  "states": ["q0"],
+  "alphabet": ["a", "+", "*"],
+  "in_stack": ["+", "*", "E"],
+  "in_transform": ["a", "+", "*"],
+  "rules": [
+    ["q0", "*", "E", "q0", "EE*", "EPS"],
+    ["q0", "EPS", "+", "q0", "EPS", "+"],
+    ["q0", "a", "E", "q0", "EPS", "a"],
+    ["q0", "+", "E", "q0", "EE+", "EPS"],
+    ["q0", "EPS", "*", "q0", "EPS", "*"]
+  ],
+  "start": "q0",
+  "start_stack": "E",
+  "end": ["q0"]
+}

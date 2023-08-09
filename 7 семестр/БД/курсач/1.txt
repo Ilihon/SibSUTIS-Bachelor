@@ -1,0 +1,32 @@
+create table t2
+(id int auto_increment, name varchar(10) NOT NULL, type varchar(10) NOT NULL, fabric varchar(10) NOT NULL, PRIMARY KEY (id));
+
+INSERT INTO t2(name, type, fabric) VALUES('Win95', 'Win', 'Microsoft');
+
+INSERT INTO t2(name, type, fabric) VALUES('Win98', 'Win', 'Microsoft');
+
+INSERT INTO t2(name, type, fabric) VALUES('WinNT', 'Win', 'UnixF');
+
+INSERT INTO t2(name, type, fabric) VALUES('WinXP', 'Win', 'Apple');
+
+INSERT INTO t2(name, type, fabric) VALUES('Unix', 'Unix', 'UnixF');
+
+INSERT INTO t2(name, type, fabric) VALUES('FreeBSD', 'Unix', 'Jobbs');
+
+INSERT INTO t2(name, type, fabric) VALUES('Linux', 'Unix', 'UnixF');
+
+INSERT INTO t2(name, type, fabric) VALUES('MacOS1', 'Mac', 'Apple');
+
+INSERT INTO t2(name, type, fabric) VALUES('MacOS2', 'Mac', 'Apple');
+
+INSERT INTO t2(name, type, fabric) VALUES('MacOS3', 'Mac', 'Jobbs');
+
+14
+1) SELECT * FROM `t2` WHERE name LIKE '%W%'
+2) SELECT fabric FROM t2 WHERE type = (SELECT MIN(type) FROM t2)
+3) SELECT `type` FROM `t2` WHERE `fabric` IN (SELECT `fabric` FROM t2 WHERE name NOT LIKE '%i%')
+
+4
+1)SELECT fabric FROM `t2` WHERE fabric >= 'A' and fabric < 'E'
+2)SELECT type, COUNT(type) FROM `t2` WHERE type <> 'Win' GROUP BY type
+3)SELECT fabric FROM `t2` WHERE type IN (SELECT `fabric` FROM t2 WHERE name LIKE "%a%")

@@ -1,0 +1,15 @@
+SELECT a.odate, a.onum, a.amt * 0.85, "евро", b.sname, b.comm FROM ord a, sal b WHERE a.snum = b.snum AND a.odate = '2021-10-03'
+
+SELECT a.onum, b.sname, c.cname FROM ord a, sal b, cust c WHERE a.snum = b.snum AND a.cnum = c.cnum AND b.city = 'London' AND (c.city = 'Rome' OR c.city = 'London')
+ORDER BY a.onum
+
+SELECT a.sname, SUM(b.amt), a.comm FROM sal a, ord b WHERE a.snum = b.snum AND b.odate < '2021-10-05' GROUP BY a.sname 
+
+SELECT a.onum, a.odate, b.sname, c.cname FROM ord a, sal b, cust c WHERE (a.snum = b.snum AND a.cnum = c.cnum) AND b.city <> c.city
+
+SELECT a.cname, b.cname FROM cust a, cust b WHERE b.rating > 100 AND a.cname < b.cname 
+
+SELECT sname FROM sal WHERE snum IN(SELECT snum FROM cust WHERE rating > 100)
+
+SELECT snum, SUM(amt) FROM ord GROUP BY snum
+HAVING SUM(amt) > (SELECT MIN(amt) FROM ord)

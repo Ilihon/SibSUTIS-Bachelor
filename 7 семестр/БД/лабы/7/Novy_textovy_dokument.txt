@@ -1,0 +1,177 @@
+<?php
+$treug = array();
+for ($n = 1; $n <=10; $n ++){
+    array_push($treug, $n * ($n + 1) / 2);
+}
+
+foreach($treug as $key){
+    echo "$key  ";
+}
+
+$kvd = array();
+for ($n = 1; $n <=10; $n ++){
+    array_push($kvd, $n * $n);
+}
+print "</br>";
+foreach($kvd as $key){
+    echo "$key ";
+}
+$rez = array_merge($treug, $kvd);
+sort($rez);
+print "</br>";
+foreach($rez as $key){
+    echo "$key ";
+}
+array_shift($rez);
+print "</br>";
+
+foreach($rez as $key){
+    echo "$key ";
+}
+$rez1 = array_unique($rez);
+print "</br>";
+
+foreach($rez1 as $key){
+    echo "$key ";
+}
+
+$treug1 = array();
+for ($n = 1; $n <=30; $n ++){
+    array_push($treug1, $n * ($n + 1) / 2);
+}
+
+$kvd1 = array();
+for ($n = 1; $n <=30; $n ++){
+    array_push($kvd1, $n * $n);
+}
+
+print "</br>";
+print "<table style='border: 1px'>\n";
+for ($y=1; $y <= 30; $y++) {
+	print "<tr>\n";
+	for ($x=1; $x <= 30; $x++) {
+	 	$c = $x*$y;
+	 	if(in_array($c, $treug1) and in_array($c, $kvd1)){
+		 	print "\t<td bgcolor='red'>";
+		}
+	 	elseif (in_array($c, $treug1)){
+		 	print "\t<td bgcolor='green'>";
+		}
+	 	elseif (in_array($c, $kvd1)){
+		 	print "\t<td bgcolor='blue'>";
+		}
+	 	else{
+			print "\t<td bgcolor='white'>";
+		}
+		print ($c);
+		print "</td>\n";
+	}
+	print "</tr>\n";
+}
+print "</table>";
+
+print "</br>";
+print "<table cellpadding='0' style='border: 1px'>\n";
+for ($y=1; $y <= 30; $y++) {
+	print "<tr>\n";
+	for ($x=1; $x <= 30; $x++) {
+	 	$c = $x*$y % 7;
+	 	if($c == 0){
+		 	print "\t<td height='14' width='15' bgcolor='white'>";
+		}
+	 	elseif ($c == 1){
+		 	print "\t<td height='14' width='15' bgcolor='aqua'>";
+		}
+	 	elseif ($c == 2){
+		 	print "\t<td height='14' width='15' bgcolor='blue'>";
+		}
+		elseif ($c == 3){
+		 	print "\t<td height='14' width='15' bgcolor='yellow'>";
+		}
+		elseif ($c == 4){
+		 	print "\t<td height='14' width='15' bgcolor='purple'>";
+		}
+	 	elseif ($c == 5){
+		 	print "\t<td height='14' width='15' bgcolor='red'>";
+		}
+	 	elseif ($c == 6){
+		 	print "\t<td height='14' width='15' bgcolor='lime'>";
+		}
+		print "<font size='1'>&nbsp";
+		print "</td>\n";
+	}
+	print "</tr>\n";
+}
+print "</table>";
+
+$colors = array("white", "aqua", "blue", "yellow", "purple", "red", "lime");
+print "</br>";
+
+for ($k=4; $k <= 7; $k++){
+	print($k);
+	print "<table cellpadding='0' style='border: 1px'>\n";
+	for ($y=1; $y <= 30; $y++) {
+		print "<tr>\n";
+		for ($x=1; $x <= 30; $x++) {
+			$c = $x*$y % $k;
+			if($c == 0){
+				print "\t<td height='14' width='15' bgcolor='$colors[$c]'>";
+			}
+			elseif ($c == 1){
+				print "\t<td height='14' width='15' bgcolor='$colors[$c]'>";
+			}
+			elseif ($c == 2){
+				print "\t<td height='14' width='15' bgcolor='$colors[$c]'>";
+			}
+			elseif ($c == 3){
+				print "\t<td height='14' width='15' bgcolor='$colors[$c]'>";
+			}
+			elseif ($c == 4){
+				print "\t<td height='14' width='15' bgcolor='$colors[$c]'>";
+			}
+			elseif ($c == 5){
+				print "\t<td height='14' width='15' bgcolor='$colors[$c]'>";
+			}
+			elseif ($c == 6){
+				print "\t<td height='14' width='15' bgcolor='$colors[$c]'>";
+			}
+			print "<font size='1'>&nbsp";
+			print "</td>\n";
+		}
+		print "</tr>\n";
+	}
+	print "</table>";
+}
+
+$cust = array (
+'cnum' => 2001,
+'cname' => "Hoffman",
+'city' => "London",
+'snum' => 1001,
+'rating' => 100
+);
+
+foreach( $cust as $key => $value ){
+    echo $key."\t=>\t".$value."\n";
+ 	echo "</br>";
+}
+asort($cust);
+echo "</br>";
+
+foreach( $cust as $key => $value ){
+    echo $key."\t=>\t".$value."\n";
+ 	echo "</br>";
+}
+echo "</br>";
+ksort($cust);
+foreach( $cust as $key => $value ){
+    echo $key."\t=>\t".$value."\n";
+ 	echo "</br>";
+}
+echo "</br>";
+sort($cust);
+foreach( $cust as $key => $value ){
+    echo $key."\t=>\t".$value."\n";
+ 	echo "</br>";
+}
+?>  

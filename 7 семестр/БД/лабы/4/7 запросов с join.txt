@@ -1,0 +1,56 @@
+create table country 
+  (conum int(4) NOT NULL,   
+city  varchar(10) NOT NULL,  
+country varchar(20) NOT NULL, 
+capital varchar(20) NOT NULL,  
+ PRIMARY KEY (conum));
+ 
+INSERT INTO country (conum, city, country, capital)  VALUES (1, 'London', 'Great Britan', 'London'); 
+INSERT INTO country (conum, city, country, capital)  VALUES (2, 'Rome', 'Italy', 'Rome'); 
+INSERT INTO country (conum, city, country, capital)  VALUES (3, 'San Jose', 'USA', 'Washington'); 
+INSERT INTO country (conum, city, country, capital)  VALUES (4, 'Ufa', 'Russia', 'Moscow');
+
+1. Выведите для всех покупателей город и страну, в которой они живут. (В случае если информация о стране в базе отсутствует - выведите NULL)
+SELECT cname, cust.city, country.country 
+FROM cust
+LEFT OUTER JOIN country ON cust.city = country.city
+
+2. Выведите дату заказа, покупателя и сумму заказа с помощью соединения таблиц
+SELECT odate, cname, amt 
+FROM ord
+INNER JOIN cust ON ord.cnum = cust.cnum
+
+3. Выберите продавцов рейтинг покупателей которых был больше 150
+SELECT DISTINCT sname 
+FROM sal
+INNER JOIN cust ON sal.snum = cust.snum
+WHERE cust.rating > 150
+
+4. С помощью соединений покажите сумму комиссионных, которые получили продавцы за четвёртое октября
+SELECT odate, sname, SUM(amt)*comm   
+FROM ord
+INNER JOIN sal ON ord.snum = sal.snum
+WHERE odate = '2021-10-04'
+GROUP BY sname
+
+5. Выведите все те города, которые отсутствуют в таблице country
+SELECT cust.city
+FROM cust
+LEFT OUTER JOIN country ON cust.city = country.city
+WHERE country.country is NULL
+UNION
+SELECT sal.city
+FROM sal
+LEFT OUTER JOIN country ON sal.city = country.city
+WHERE country.country is NULL
+
+6. Используя соединения выведите пары городов "Покупатель - Продавец", отсортировав их по дате заказов.
+SELECT odate, cust.city, sal.city
+FROM ord
+INNER JOIN cust ON ord.cnum = cust.cnum
+INNER JOIN sal ON ord.snum = sal.snum
+
+7. Напишите запрос к таблице продавцов, которые живут в столице своей страны
+SELECT sname   
+FROM sal
+INNER JOIN country ON sal.city = country.capital

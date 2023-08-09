@@ -1,0 +1,18 @@
+SELECT * FROM cust WHERE cname BETWEEN 'A%' and 'G%'
+
+SELECT sname FROM `sal` WHERE sname LIKE '%e%'
+
+SELECT odate, SUM(amt) FROM ord
+	GROUP BY odate
+        HAVING odate = '2021-10-03'
+
+SELECT COUNT(DISTINCT city) FROM cust
+
+SELECT snum, MIN(amt) FROM ord
+	GROUP BY snum;
+
+SELECT MIN(cname) FROM `cust` WHERE cname LIKE 'G%'
+
+SELECT city, rating FROM `cust`
+	GROUP BY city
+        HAVING MAX(rating) 
