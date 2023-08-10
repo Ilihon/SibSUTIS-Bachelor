@@ -1,0 +1,25 @@
+man(john).
+man(bob).
+man(paul).
+man(sam).
+woman(mary).
+woman(ann).
+woman(liz).
+woman(pat).
+
+parent(john,bob).
+parent(mary,bob).
+parent(mary,ann).
+parent(bob,liz).
+parent(bob,paul).
+parent(bob,sam).
+parent(paul,pat).
+
+dad(Father,Child):-man(Father),parent(Father,Child).
+mom(Mother,Child):-woman(Mother),parent(Mother,Child).
+brother(Sibling,Brother):-man(Brother),parent(Parent,Brother), parent(Parent,Sibling),Brother\==Sibling.
+sister(Sibling,Sister):-woman(Sister),parent(Parent,Sister), parent(Parent,Sibling),Sister\==Sibling.
+grandchild(Grandson,Grandparent):-man(Grandson), parent(Parent,Grandson),parent(Grandparent,Parent).
+aunt(Aunt,Nephew):-woman(Aunt),parent(Grandparent,Aunt),parent(Grandparent,Parent),parent(Parent,Nephew).
+two_children(Parent):-parent(Parent,Child1),parent(Parent,Child2), Child1@>Child2, not((parent(Parent,Child),Child1\==Child,Child2\==Child)).
+clan_continuer(Father,Son):-man(Father),man(Son), parent(Father,Son).

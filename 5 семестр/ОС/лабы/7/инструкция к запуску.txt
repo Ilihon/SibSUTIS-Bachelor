@@ -1,0 +1,9 @@
+1. cl /EHsc mon.cpp kernel32.lib psapi.lib
+2. cl /c lib.c
+3. link /DLL lib.obj
+4. cl prog.c kernel32.lib
+5. в одной командной строке запускаем prog.exe
+6. во второй mon.exe prog.exe
+7. в первой командной строке вводим какое-нибудь число
+8. во второй mon.exe prog.exe
+9. в первой командной строке вводим какое-нибудь число

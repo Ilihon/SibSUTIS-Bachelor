@@ -1,0 +1,47 @@
+#ifndef STARTDIALOG_H
+#define STARTDIALOG_H
+
+#include <QAbstractItemModel>
+#include <QPushButton>
+#include <QMessageBox>
+#include <InputDialog.h>
+#include <QWidget>
+
+class StartDialog : public QAbstractItemModel
+{
+    Q_OBJECT
+
+public:
+    StartDialog_Zaharowa(QWidget* pwgt =0) : QPushButton("Нажми",pwgt)
+    {
+        connect(this,SIGNAL(clocked()),SLOT(slotButtonClicked()));
+        
+    }
+public slots:
+    void slotButtonClicked()
+    {
+        InputDialog* pInputDialog = InputDialog;
+        if (pInputDialog->exec()==QDialog::Accepted){
+            QMessageBox::information(0,"Выша информация: ","Имя: " +pIputDialog->firstName()+"\nФамилия: "+pInputDialog->lastName());
+            delete pInputDialog;
+        }
+    };
+    explicit StartDialog_Zaharowa(QObject *parent = nullptr);
+
+    // Header:
+    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
+
+    // Basic functionality:
+    QModelIndex index(int row, int column,
+                      const QModelIndex &parent = QModelIndex()) const override;
+    QModelIndex parent(const QModelIndex &index) const override;
+
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+
+private:
+};
+
+#endif // STARTDIALOG_ZAHAROWA_H

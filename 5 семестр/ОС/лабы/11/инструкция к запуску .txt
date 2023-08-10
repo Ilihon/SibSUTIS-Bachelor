@@ -1,0 +1,6 @@
+cl /c libevd1.cpp
+link /DLL /DEF:lib.def lib.obj
+cl mutex_1.cpp
+cl mutex_2.cpp
+cl semaphor_1.cpp
+cl semaphor_2.cpp
