@@ -1,0 +1,4 @@
+build/*
+bin/main
+bin/sat
+bin/sbt

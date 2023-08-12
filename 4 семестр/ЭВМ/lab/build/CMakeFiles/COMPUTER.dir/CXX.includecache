@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/students/2018/ip813s03/Ilihon/lab/mySimpleComputer.cpp
+mySimpleComputer.h
+/home/students/2018/ip813s03/Ilihon/lab/mySimpleComputer.h
+
+/home/students/2018/ip813s03/Ilihon/lab/mySimpleComputer.h
+iostream
+-
+stdlib.h
+-
+stdio.h
+-
+inttypes.h
+-
+

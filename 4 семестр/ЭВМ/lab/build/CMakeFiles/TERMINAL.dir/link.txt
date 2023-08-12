@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTERMINAL.a  CMakeFiles/TERMINAL.dir/myTerminal.cpp.o
+/usr/bin/ranlib libTERMINAL.a

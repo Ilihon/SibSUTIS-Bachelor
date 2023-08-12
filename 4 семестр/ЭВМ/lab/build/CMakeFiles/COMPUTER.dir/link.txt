@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCOMPUTER.a  CMakeFiles/COMPUTER.dir/mySimpleComputer.cpp.o
+/usr/bin/ranlib libCOMPUTER.a

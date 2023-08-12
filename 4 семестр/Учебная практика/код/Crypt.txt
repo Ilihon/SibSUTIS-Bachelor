@@ -1,0 +1,20 @@
+Bitcoin                          ₽48.58T             ₽2,595,808.99
+Ethereum                         ₽18.11T             ₽156,145.08
+Tether                           ₽4.38T              ₽73.71
+Dogecoin                         ₽3.07T              ₽23.68
+Cardano                          ₽3.05T              ₽95.45
+Binance Coin                     ₽2.96T              ₽19,264.44
+XRP                              ₽2.71T              ₽58.83
+Polkadot                         ₽1.33T              ₽1,419.68
+Internet Computer                ₽1.31T              ₽10,548.23
+USD Coin                         ₽1.06T              ₽73.64
+Bitcoin Cash                     ₽796.84B            ₽42,511.36
+Uniswap                          ₽742.80B            ₽1,313.21
+Litecoin                         ₽735.68B            ₽11,021.06
+Binance USD                      ₽633.95B            ₽73.64
+Chainlink                        ₽625.19B            ₽1,460.69
+Stellar                          ₽584.64B            ₽25.30
+Solana                           ₽498.13B            ₽1,827.08
+Wrapped Bitcoin                  ₽471.63B            ₽2,594,726.11
+Ethereum Classic                 ₽458.70B            ₽3,943.64
+THETA                            ₽454.27B            ₽454.27

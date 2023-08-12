@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/students/2018/ip813s03/Ilihon/lab/myTerminal.cpp
+myTerminal.h
+/home/students/2018/ip813s03/Ilihon/lab/myTerminal.h
+
+/home/students/2018/ip813s03/Ilihon/lab/myTerminal.h
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+sys/ioctl.h
+-
+

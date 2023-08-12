@@ -1,0 +1,5 @@
+/home/students/2018/ip813s03/Ilihon/lab/build/CMakeFiles/rebuild_cache.dir
+/home/students/2018/ip813s03/Ilihon/lab/build/CMakeFiles/edit_cache.dir
+/home/students/2018/ip813s03/Ilihon/lab/build/CMakeFiles/main.dir
+/home/students/2018/ip813s03/Ilihon/lab/build/CMakeFiles/COMPUTER.dir
+/home/students/2018/ip813s03/Ilihon/lab/build/CMakeFiles/TERMINAL.dir
