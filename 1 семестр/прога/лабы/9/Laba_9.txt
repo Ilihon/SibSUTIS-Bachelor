@@ -1,0 +1,226 @@
+№1
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int random (int i) {return rand()%i; }
+int main()
+{ int t,i, A[10][10],a=-100,b=100,x=0,k=0;
+/* Загрузка чисел*/
+for(t=0; t<10; ++t)
+for (i=0; i<10; ++i)
+A[t][i] = random(b-a+1) + a;
+/* Вывод матрицы*/
+printf("Matrica do \n");
+printf("\n");
+for (t=0; t<10; ++t)
+{
+printf("\n");
+for (i=0; i<10; ++i)
+printf("%4d  ",A[t][i]);
+printf ("\n");
+}
+
+printf ("\n");
+printf("Matrica posle \n");
+printf ("\n");
+for (t=0; t<10; ++t)
+{for (i=0; i<10; ++i)
+{ x = A[0][i];
+  A[0][i] = A[1][i];
+  A[1][i] = x;
+  x = A[2][i];
+  A[2][i] = A[3][i];
+  A[3][i] = x;
+  x = A[4][i];
+  A[4][i] = A[5][i];
+  A[5][i] = x;
+  x = A[6][i];
+  A[6][i] = A[7][i];
+  A[7][i] = x;
+  x = A[8][i];
+  A[8][i] = A[9][i];
+  A[9][i] = x;
+}
+printf("\n");
+for (t=0; t<10; ++t)
+{
+printf("\n");
+for (i=0; i<10; ++i)
+printf("%4d  ",A[t][i]);
+printf ("\n");
+}
+}
+return 0;
+}
+
+
+
+
+
+
+№2
+
+
+#include <stdio.h> 
+#include <conio.h> 
+const int M = 5; 
+const int N = 5; 
+main () 
+
+{int i,j; 
+float A[M][N], sum; 
+
+sum=0; 
+for ( i = 0; i < M; i ++ ) 
+
+for ( j = 0; j < N; j ++ ) 
+
+scanf ("%f", &A[i][j]); 
+
+for ( i = 0; i < M; i ++ ) 
+{ 
+for ( j = 0; j < N; j ++ ) 
+{ sum+=A[i][j]; 
+} 
+for ( j = 0; j < N; j ++ ) 
+{A[i][j]=A[i][j]/sum;} 
+sum=0; 
+} 
+for ( i = 0; i < M; i ++ ) 
+for ( j = 0; j < N; j ++ ) 
+printf("%f\n",A[i][j]); 
+
+
+return 0; 
+
+}
+
+
+
+
+№3.1
+
+#include <stdio.h>
+#include <stdlib.h>
+const int M = 5; 
+const int N = 5;
+int random (int i) {return rand()%i; }
+int main()
+{ int t,i, A[M][N],a=-10,b=10,x=0,k=0;
+/* Загрузка чисел */
+for(t=0; t<M; ++t)
+for (i=0; i<N; ++i)
+A[t][i] = random(b-a+1) + a;
+/*Вывод матрицы*/
+printf("Matrica do \n");
+printf("\n");
+for (t=0; t<M; ++t)
+{
+printf("\n");
+for (i=0; i<N; ++i)
+printf("%4d  ",A[t][i]);
+printf ("\n");
+}
+//Новая матрица из первой//
+printf ("\n");
+printf("Matrica posle \n");
+printf ("\n");
+for (t=0; t<M; ++t)
+{
+printf("\n");
+for (i=0; i<N; ++i)
+printf("%4d  ",A[i][t]);
+printf ("\n");
+}
+
+return 0;
+}
+
+
+
+№3.2
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int random (int i) {return rand()%i; }
+int main()
+{ int t,i, num[5][5],a=-10,b=10,x=0,k=0;
+/* загрузка чисел */
+for(t=0; t<5; ++t)
+for (i=0; i<5; ++i)
+num[t][i] = random(b-a+1) + a;
+/* вывод чисел */
+printf("Matrica do \n");
+printf("\n");
+for (t=0; t<5; ++t)
+{
+printf("\n");
+for (i=0; i<5; ++i)
+printf("%4d  ",num[t][i]);
+printf ("\n");
+}
+//новая матрица из первой//
+printf ("\n");
+printf("Matrica posle \n");
+printf ("\n");
+for (t=0; t<5; ++t)
+{for (i=0; i<5; ++i)
+{ x = num[0][0];
+  num[0][0] = num[1][1];
+  num[1][1] = x;
+  x = num[2][2];
+  num[2][2] = num[3][3];
+  num[3][3] = x;
+  x = num[4][4];
+  num[4][4] = num[5][5];
+  num[5][5] = x;
+}
+printf("\n");
+for (t=0; t<5; ++t)
+{
+printf("\n");
+for (i=0; i<5; ++i)
+printf("%4d  ",num[t][i]);
+printf ("\n");
+}
+}
+return 0;
+}
+
+
+
+№4
+
+
+
+#include<iostream>
+#include<stdlib.h>
+#include<time.h>
+using namespace std;
+main()
+{
+	int m[3][3],flag=1,n=0;
+	srand(time(NULL));
+	while(flag)
+	{for (int i=0;i<3;i++)
+	for (int j=0;j<3;j++)
+	m[i][j]=rand()%10;
+	if(((m[0][0]+m[0][1]+m[0][2])==(m[1][0]+m[1][1]+m[1][2]))&&((m[1][0]+m[1][1]+m[1][2])==(m[2][0]+m[2][1]+m[2][2]))&&((m[0][0]+m[0][1]+m[0][2])==(m[0][0]+m[1][0]+m[2][0]))&&((m[0][0]+m[1][0]+m[2][0])==(m[0][1]+m[1][1]+m[2][1]))&&((m[0][1]+m[1][1]+m[2][1])==(m[0][2]+m[1][2]+m[2][2])))
+		{
+			flag=0;
+		}
+		n++;
+	}
+	for (int i=0;i<3;i++)
+	{
+			for (int j=0;j<3;j++)
+			cout<<m[i][j]<<" ";
+			cout<<endl;
+	}
+	cout<<n;
+	return 0;
+}
