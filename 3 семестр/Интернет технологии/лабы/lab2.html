@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<html>
+<head>
+<title>Лабораторная 2</title>
+</head>
+
+<body>
+  <script>
+var myWindow;
+function openWindow() {
+  myWindow = window.open("","","width=200,height=200");
+}
+function resizeWindowTo() {
+  if (myWindow && !myWindow.closed) {
+    myWindow.resizeTo(300,300);
+	myWindow.focus();
+  }
+}
+function resizeWindowBy(x,y) {
+  if (myWindow && !myWindow.closed) {
+    myWindow.resizeBy(x,y);
+	myWindow.focus();
+  }
+}
+</script>
+<button onclick="openWindow()">Открыть окно</button>
+<button onclick="resizeWindowTo()">Изменить ширину и высоту окна браузера (300,300)</button>
+<TABLE BORDER=2 WIDTH="40%" ALIGN=center CELLSPACING=1 CELLPADDING=5>
+
+<TR style='font-family: Arial; font-size:15px'>
+<TH WIDTH="25%" ALIGN=CENTER BGCOLOR=GRAY>Страна</TH>
+<TH ALIGN=CENTER BGCOLOR=GRAY>Процент домашних кошек</TH>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Россия</TD>
+<TD ALIGN=CENTER>59%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>США</TD>
+<TD ALIGN=CENTER>43%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Италия</TD>
+<TD ALIGN=CENTER>40%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Вьетнам</TD>
+<TD ALIGN=CENTER>39%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Великобритания</TD>
+<TD ALIGN=CENTER>32%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Германия</TD>
+<TD ALIGN=CENTER>29%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Индия</TD>
+<TD ALIGN=CENTER>18%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Китай</TD>
+<TD ALIGN=CENTER>16%</TD>
+</TR>
+<TR style='font-size:15px; font-family: Courier New'>
+<TD ALIGN=CENTER>Южная Корея</TD>
+<TD ALIGN=CENTER>9%</TD>
+</TR>
+</TABLE>
+
+</body>
+</html>

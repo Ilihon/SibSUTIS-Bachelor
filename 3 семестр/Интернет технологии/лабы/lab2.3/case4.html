@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<script>
+function Sq() { //возведение в квадрат
+	var a = Number(document.getElementById("num4").value);
+	document.getElementById("result").value = a*a;
+	document.getElementById("num4").value = " ";
+	}
+
+function S(){
+	var a = Number(document.getElementById("square").value);
+	document.getElementById("num4").value = Math.sqrt(a);
+}
+</script>
+
+</HEAD>
+
+<BODY background="4.jpg">
+
+<h1 align=center style = "color:white"><b><dfn>Вычисление площади</dfn></b></h1>
+<h2 align=center style = "color:white">Выдели поле "Сторона"</h2>
+
+<FORM align=center>
+<p style = "color:white"> Сторона:</p> <input type="text" size=7 id = "num4" onSelect="Sq()">
+<hr>
+<p style = "color:white"> Площадь: </p> <input type="text" size=7 id = "result" ><hr>
+
+<input type="reset" value= Обновить>
+
+</FORM>
+
+</BODY>
+
+</HTML>

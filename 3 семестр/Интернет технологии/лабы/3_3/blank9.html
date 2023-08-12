@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная 3.3</title>
+</head>
+
+
+<style>
+
+    .wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table {
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+   
+    td {
+        text-align:center;
+    }
+
+    .btn {
+        margin-bottom: 30px;
+    }
+
+    .revoke {
+        margin-bottom: 30px;
+    }
+
+    .infromation {
+        display: flex;
+        justify-content: left;
+    }
+
+    .facult, .course {
+        width: 60px;
+    }
+
+    .university {
+        text-align: center;
+    }
+    .names{
+        text-align: right;
+    }
+
+    .group {
+        font-weight: bold;
+    }
+
+    .brigade {
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .studentNames {
+        text-align: right;
+    }
+    .result {
+        display: inline-block;
+    }
+
+    .wrapRes {
+        display: flex;
+    }
+</style>
+
+<body>
+
+     <h1 class="university"> Лабораторная работа N 3.3
+ <br>Использование методов XML DOM
+</h1>
+    <p class="group">
+        Группа
+    </p>
+    <p class="brigade">
+        Бригада №3
+    </p>
+    <p class="names">
+        Имя<br>
+        Имя<br>
+        Имя
+    <div class="wrap">
+        <form action="#" class="information">
+            Факультет: <input type="text" class="facult">
+            Курс <input type="text" class="course">
+            <select name="groups" id="groups" class="groups">
+                <option value=""></option>
+                <option value="ИП-913" class="gr">ИП-913</option>
+                <option value="ИВ-022" class="gr">ИП-915</option>
+                <option value="АП-023" class="gr">МТС-023</option>
+                <option value="ГМ-813" class="gr">ГФ-813</option>
+                <option value="РИ-91" class="gr">ИВ-91</option>
+            </select>
+            <select name="families" id="" class="fam">
+                <option value=""></option>
+                <option value="">Агеев</option>
+                <option value="">Аммосов</option>
+                <option value="">Цикунов</option>
+                <option value="">Твердохлеб</option>
+                <option value="">Распонамарева</option>
+            </select>
+        </form>
+        <table class="table" border=1 cellpadding = 3 cellspacing=0>
+            <tr>
+                <td width="80%">Предмет</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td width="80%">Метрология, Стандартизация и Сертификация</td>
+                <td><input type="radio" name="radio1" value="0" class="radio1"></td>
+                <td><input type="radio" name="radio1" value="1" class="radio1"></td>
+                <td><input type="radio" name="radio1" value="2" class="radio1"></td>
+            </tr>
+
+            <tr>
+                <td width="80%">Объектно Ориентированное Программирование</td>
+                <td><input type="radio" name="radio2" value="0" class="radio2"></td>
+                <td><input type="radio" name="radio2" value="1" class="radio2"></td>
+                <td><input type="radio" name="radio2" value="2" class="radio2"></td>
+            </tr>
+
+            <tr>
+                <td width="80%">Архитектура Вычислительных Систем</td>
+                <td><input type="radio" name="radio3" value="0" class="radio3"></td>
+                <td><input type="radio" name="radio3" value="1" class="radio3"></td>
+                <td><input type="radio" name="radio3" value="2" class="radio3"></td>
+            </tr>
+
+            <tr>
+                <td width="80%">Теория Массового Обслуживания</td>
+                <td><input type="radio" name="radio4" value="0" class="radio4"></td>
+                <td><input type="radio" name="radio4" value="1" class="radio4"></td>
+                <td><input type="radio" name="radio4" value="2" class="radio4"></td>
+            </tr>
+
+            <tr>
+                <td width="80%">Экономика</td>
+                <td><input type="radio" name="radio5" value="0" class="radio5"></td>
+                <td><input type="radio" name="radio5" value="1" class="radio5"></td>
+                <td><input type="radio" name="radio5" value="2" class="radio5"></td>
+            </tr>
+
+            <tr>
+                <td width="80%">Базы данных</td>
+                <td><input type="radio" name="radio6" value="0" class="radio6"></td>
+                <td><input type="radio" name="radio6" value="1" class="radio6"></td>
+                <td><input type="radio" name="radio6" value="2" class="radio6"></td>
+            </tr>
+
+            <tr>
+                <td width="80%">Физическая Культура</td>
+                <td><input type="radio" name="radio7" value="0" class="radio7"></td>
+                <td><input type="radio" name="radio7" value="1" class="radio7"></td>
+                <td><input type="radio" name="radio7" value="2" class="radio7"></td>
+            </tr>
+        </table>
+        <button class = "btn">Выполнить</button>
+        <button class = "revoke">Удалить</button>
+        <div class="wrapRes"><div class="result"></div><span class="res"></span></div>
+    </div>
+
+
+    <script>
+        let radios1 = document.querySelectorAll(".radio1");
+        let radios2 = document.querySelectorAll(".radio2");
+        let radios3 = document.querySelectorAll(".radio3");
+        let radios4 = document.querySelectorAll(".radio4");
+        let radios5 = document.querySelectorAll(".radio5");
+        let radios6 = document.querySelectorAll(".radio6");
+        let radios7 = document.querySelectorAll(".radio7");
+        let btn = document.querySelector(".btn");
+        let hl = document.querySelectorAll(".gr");
+        let res = document.querySelector(".res");
+        let facult = document.querySelector(".facult");
+        let cr = document.querySelector(".course");
+        let result = document.querySelector(".result");
+        let revoke = document.querySelector(".revoke");
+
+        let xml;
+        if(window.XMLHttpRequest){
+            xml=new window.XMLHttpRequest();
+            xml.open("GET","XMLFile1.xml",false);
+            xml.send("");
+        }
+        else{
+            xml=new ActiveXObject("Microsoft.XMLDOM");
+            xml.async=false;
+            xml.load("XMLFile1.xml");
+        }
+
+        let sum = 0;
+        let sred = 0;
+
+        btn.onclick = function() {
+            for(let i = 0; i < 3; i++) {
+                if(radios1[i].checked) {
+                    sum += Number(radios1[i].value);
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios2[i].checked) {
+                    sum += Number(radios2[i].value);
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios3[i].checked) {
+                    sum += Number(radios3[i].value);
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios4[i].checked) {
+                    sum += Number(radios4[i].value);
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios5[i].checked) {
+                    sum += Number(radios5[i].value);
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios6[i].checked) {
+                    sum += Number(radios6[i].value);
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios7[i].checked) {
+                    sum += Number(radios7[i].value);
+                }
+            }
+
+            sred = sum/7;
+            result.innerHTML = "Средний балл за контрольный срок составляет: ";
+            res.innerHTML = sred.toFixed(2);
+            if(sred.toFixed(2) >= 1) {
+                res.style.backgroundColor = "red";
+            }
+        }
+
+        revoke.onclick = function() {
+            result.innerHTML = "";
+            for(let i = 0; i < 3; i++) {
+                if(radios1[i].checked) {
+                    radios1[i].checked = false;
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios2[i].checked) {
+                    radios2[i].checked = false;
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios3[i].checked) {
+                    radios3[i].checked = false;
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios4[i].checked) {
+                    radios4[i].checked = false;
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios5[i].checked) {
+                    radios5[i].checked = false;
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios6[i].checked) {
+                    radios6[i].checked = false;
+                }
+            }
+
+            for(let i = 0; i < 3; i++) {
+                if(radios7[i].checked) {
+                    radios7[i].checked = false;
+                }
+            }
+            sum = 0;
+        }
+
+      
+
+        let help = function() {
+            let select = document.getElementById('groups')
+            select.addEventListener("change", function() {
+                if (this.value == "ИВ-915") {
+                    facult.value = "МРМ";
+                    cr.value = "1";
+                } else if(this.value == "ИП-913") {
+                    facult.value = "ИВТ";
+                    cr.value = "2";
+                } else if(this.value == "МТС-023") {
+                    facult.value = "МТС";
+                    cr.value = "1";
+                } else if(this.value == "ГФ-813") {
+                    facult.value = "ГФ";
+                    cr.value = "3";
+                } else if(this.value == "ИВ-91") {
+                    facult.value = "МТС";
+                    cr.value = "2";
+                }
+            });
+        }
+        help();
+    </script>
+</body>>
+</html>>

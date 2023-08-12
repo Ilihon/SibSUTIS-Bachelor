@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Лабораторная 2.10</title>
+		<style>
+			body{
+				background-color: white;
+			}
+		</style>
+		<script>
+
+			var n = 0;
+			var i = 0;
+			function yadaun() {
+				if ( i == 0) {
+					n = 1;
+					i++;
+					}
+					else
+						if (i == 1){
+							n = 0;
+							i--;
+						}
+			}
+			function clock ()
+			{
+				date = new Date ();
+				hours = date.getHours ();
+				minutes = date.getMinutes ();
+				days = date.getDate ();
+				months = date.getMonth () + 1;
+				years = date.getFullYear();
+				var zero;
+				if (hours > 12) {
+				    zero = "PM";
+				    hours -= 12;
+				}
+				else
+				    zero = "AM";
+				document.getElementById('hour1').src = "dg" + Math.floor(hours/10) + ".gif";
+				document.getElementById('hour2').src = "dg" + hours %10 + ".gif";
+				document.getElementById('minute1').src = "dg" + Math.floor(minutes/10) + ".gif";
+				document.getElementById('minute2').src = "dg" + minutes %10 + ".gif";
+				document.getElementById('ampm').src = "dg" + zero + ".gif";
+				document.getElementById('d1').src = "dg" + Math.floor(days/10) + ".gif";
+				document.getElementById('d2').src = "dg" + (days %10 - n) + ".gif";
+				document.getElementById('mon1').src = "dg" + Math.floor(months/10) + ".gif";
+				document.getElementById('mon2').src = "dg" + (months %10)  + ".gif";
+				document.getElementById('y1').src = "dg" + Math.floor(years /1000) + ".gif";
+				document.getElementById('y2').src = "dg" + Math.floor(years /100) %10 + ".gif";
+				document.getElementById('y3').src = "dg" + Math.floor(years /10) %100 + ".gif";
+				document.getElementById('y4').src = "dg" + (years %1000) %10 + ".gif";
+			}
+		</script>
+	</head>
+	<body onload="timer=setInterval('clock()',1000);">
+		<div align = "center">
+			<img id="hour1" src="dg0.gif"><img id="hour2" src="dg0.gif"><img src="dgc.gif"><img id="minute1" src="dg0.gif"><img id="minute2" src="dg0.gif"><img id="ampm" src="dgam.gif">
+
+			<img id="d1" src="dg0.gif" onclick="yadaun	()"><img id="d2" src="dg0.gif"><img src="dgp.gif"><img id="mon1" src="dg0.gif"><img id="mon2" src="dg0.gif"><img src="dgp.gif">
+			<img id="y1" src="dg0.gif"><img id="y2" src="dg0.gif"><img id="y3" src="dg0.gif"><img id="y4" src="dg0.gif">
+		</div>
+	</body>
+</html>

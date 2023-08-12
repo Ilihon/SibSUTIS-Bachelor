@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная 2.4</title>
+
+    <style>
+        body{
+		padding-left: 5em;
+		padding-right: 2em;
+		}
+
+        .wrap {
+            width: 800px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .clock {
+            display: ;
+        }
+
+        .time {
+            margin-right: 20px;
+        }
+
+        .university {
+                text-align: center;
+            }
+
+         .group {
+                font-weight: bold;
+            }
+            .brigade{
+        font-weight: bold;
+        text-align: right;
+    }
+    .names{
+        text-align: right;
+    }
+           
+
+           
+    </style>
+</head>
+<body>
+ <h1 class="university"> Лабораторная работа N 2.4
+ <br>Графические часы</h1>
+    <p class="group">
+        Группа ИП-913
+    </p>
+    <p class="brigade">
+        Бригада №3
+    </p>
+    <p class="names">
+        Агеев Анатолий<br>
+        Твердохлеб Антон<br>
+        Цикунов Андрей
+    </p>
+    <div class="wrap">
+        <div class="clock">
+            <div class="time">
+                <img src="" alt="" class="hourOne">
+                <img src="" alt="" class="hourTwo">
+                <img src="dgc.gif" alt="" class="dvoetoch">
+                <img src="" alt="" class="tenMin">
+                <img src="" alt="" class="min">
+                <img src="dgc.gif" alt="" class="dvoetoch">
+                <img src="" alt="" class="secOne">
+                <img src="" alt="" class="secTwo">
+                <img src="" alt="" class="dayNight">
+            </div>
+
+            <div class="date">
+                <img src="" alt="" class="dayOne">
+                <img src="" alt="" class="dayTwo">
+                <img src="dgp.gif" alt="" class="dot">
+                <img src="" alt="" class="monthOne">
+                <img src="" alt="" class="monthTwo">
+                <img src="dgp.gif" alt="" class="dot">
+                <img src="" alt="" class="yearOne">
+                <img src="" alt="" class="yearTwo">
+                <img src="" alt="" class="yearThree">
+                <img src="" alt="" class="yearFour">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="key">
+    	<button class="click" onclick="sdvig=0">
+        <div class="btn">Новосибирск</div>
+        </button>
+        <button class="click" onclick="sdvig=-4">
+        <div class="btn2 btn">Москва</div>
+        </button>
+    </div>
+
+    <script>
+ 	var sdvig = 0;
+    	let button1 = document.querySelector(".btn");
+    	let button2 = document.querySelector(".btn2");
+
+    	button1.onclick = function() {
+    		let hourOne = document.querySelector(".hourOne");
+            let help = hours[0];
+            hourOne.src = numbers[help];
+
+            let hourTwo = document.querySelector(".hourTwo");
+            help = hours[1];
+            hourTwo.src = numbers[help];
+
+            let tenMin = document.querySelector(".tenMin");
+            help = dateStr[19];
+            tenMin.src = numbers[help];
+
+            let min = document.querySelector(".min");
+            help = dateStr[20];
+            min.src = numbers[help];
+
+            let secOne = document.querySelector(".secOne");
+            help = dateStr[22];
+            secOne.src = numbers[help];
+
+            let secTwo = document.querySelector(".secTwo");
+            help = dateStr[23];
+            secTwo.src = numbers[help];
+    	}
+
+    	button2.onclick = function(){
+    		
+    	}
+    
+        let numbers = ["./dg0.gif", "./dg1.gif", "./dg2.gif", "./dg3.gif", "./dg4.gif", "./dg5.gif", "./dg6.gif", "./dg7.gif", "./dg8.gif", "./dg9.gif"]
+
+        timer = setInterval(function() {
+            let date = new Date();
+            let dateStr = String(date);
+            
+            let hours = Number(dateStr[16]+dateStr[17]) + sdvig;	    
+
+            if(hours > 11) {
+                let amPm = document.querySelector(".dayNight");
+                amPm.src = "./dgam.gif";
+            } else {
+                let amPm = document.querySelector(".dayNight");
+                amPm.src = "./dgpm.gif";
+            }
+
+	    if(hours < 0){
+	    	hours = hours + 12;
+	    }
+            hours = Number(hours%12);
+            if(hours < 10) {
+                hours = String("0" + hours);
+            }
+            if(hours > 10 && hours < 12) {
+                hours = String(hours);
+            }
+
+        
+            let hourOne = document.querySelector(".hourOne");
+            let help = hours[0];
+            hourOne.src = numbers[help];
+
+            let hourTwo = document.querySelector(".hourTwo");
+            help = hours[1];
+            hourTwo.src = numbers[help];
+
+            let tenMin = document.querySelector(".tenMin");
+            help = dateStr[19];
+            tenMin.src = numbers[help];
+
+            let min = document.querySelector(".min");
+            help = dateStr[20];
+            min.src = numbers[help];
+
+            let secOne = document.querySelector(".secOne");
+            help = dateStr[22];
+            secOne.src = numbers[help];
+
+            let secTwo = document.querySelector(".secTwo");
+            help = dateStr[23];
+            secTwo.src = numbers[help];
+
+
+            let dayOne = document.querySelector(".dayOne");
+            help = dateStr[8];
+            dayOne.src = numbers[help];
+
+            let dayTwo = document.querySelector(".dayTwo");
+            help = dateStr[9];
+            dayTwo.src = numbers[help];
+
+
+            let month = "";
+            if(date.getMonth() > 8) {
+                month = String(date.getMonth()+1);
+            } else {
+                month = "0" + Number(date.getMonth()+1);
+            }
+
+            let monthOne = document.querySelector(".monthOne");
+            help = month[0];
+            monthOne.src = numbers[help];
+
+            let monthTwo = document.querySelector(".monthTwo");
+            help = month[1];
+            monthTwo.src = numbers[help];
+
+            let yearOne = document.querySelector(".yearOne");
+            help = dateStr[11];
+            yearOne.src = numbers[help];
+
+            let yearTwo = document.querySelector(".yearTwo");
+            help = dateStr[12];
+            yearTwo.src = numbers[help];
+
+            let yearThree = document.querySelector(".yearThree");
+            help = dateStr[13];
+            yearThree.src = numbers[help];
+
+            let yearFour = document.querySelector(".yearFour");
+            help = dateStr[14];
+            yearFour.src = numbers[help];
+        }, 1000)
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<data>
+	<fakultet name="ИВТ">
+		<kurs value="1">
+			<gruppa name="ИП-916">
+				<stud name="Сотников В.В.">
+					<mark name="m1">1</mark>
+					<mark name="m2">1</mark>
+					<mark name="m3">2</mark>
+					<mark name="m4">2</mark>
+					<mark name="m5">2</mark>
+					<mark name="m6">1</mark>
+					<mark name="m7">2</mark>
+				</stud>
+				<stud name="Тарабрин И.С.">
+					<mark name="m1">1</mark>
+					<mark name="m2">2</mark>
+					<mark name="m3">2</mark>
+					<mark name="m4">2</mark>
+					<mark name="m5">0</mark>
+					<mark name="m6">1</mark>
+					<mark name="m7">2</mark>
+				</stud>
+				<stud name="Зыряннов К.В">
+					<mark name="m1">1</mark>
+					<mark name="m2">1</mark>
+					<mark name="m3">2</mark>
+					<mark name="m4">1</mark>
+					<mark name="m5">2</mark>
+					<mark name="m6">1</mark>
+					<mark name="m7">2</mark>
+				</stud>
+				<predmeti>
+					<predmet>Математика</predmet>
+					<predmet>Программирование</predmet>
+					<predmet>Информатика</predmet>
+					<predmet>История</predmet>
+					<predmet>САОД</predmet>
+					<predmet>Физика</predmet>
+					<predmet>Физическая Культура</predmet>
+				</predmeti>
+			</gruppa>
+		</kurs>
+		
+	</fakultet>
+
+	
+</data>

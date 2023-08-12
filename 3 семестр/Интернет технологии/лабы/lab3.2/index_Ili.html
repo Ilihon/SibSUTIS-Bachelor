@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<html>
+	<head>
+		<title>Лабараторная работа 3.2</title>
+		<style>
+			body { background: #a1adef; }
+			form { background: #d8e6d2; padding-left: 30px; padding-top: 30px; padding-bottom: 30px; }
+			input[type="text"] { width: 320px; height: 26px;}
+			input[type="button"] { width: 160px; height: 26px;}
+			input[type="button"] {
+				font-weight: 700;
+				color: lightyellow;
+				border-radius: 3px;
+				background: rgb(100,100,100);
+			}
+			input[type="text"] { border-radius: 3px;}
+		</style>
+
+		<script language="JavaScript">
+			function setCookie(c_name,value,expiredays){
+				var exdate=new Date();
+				exdate.setDate(exdate.getDate()+expiredays);///Устанавливаем срок хренения куки
+				document.cookie = c_name + "=" + escape(value) + //В строку дописывается имя устанавливаемой cookie и
+                    ((expiredays == null) ? "" : ";expires=" + exdate.toUTCString()); //Устанавливается время действия
+			}
+
+			function getCookie(c_name){
+				if (document.cookie.length>0){
+				    c_start = document.cookie.indexOf(c_name + "=");
+					if (c_start!=-1){
+						c_start=c_start + c_name.length+1;
+						c_end = document.cookie.indexOf(";", c_start);//Определили положение нужной cookie, и по индексам вырежем ее
+						if (c_end==-1) c_end=document.cookie.length;
+						return unescape(document.cookie.substring(c_start,c_end)); //Вернули подстроку, содержащюю нужное значение cookie
+					}
+				}
+				return "";
+			}
+
+			function deleteCookie ( cookie_name ){
+				var cookie_date = new Date ( );
+				cookie_date.setTime ( cookie_date.getTime() - 1 );
+				document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+			}
+		</script>
+
+	</head>
+	<body>
+		<form name="form">
+			<script language="JavaScript">
+				if (!getCookie("name")) document.write ("Пожалуйста, зарегистрируйся!");
+				else document.write ("Привет, " + getCookie("name") + "!");
+				if (!getCookie("count")) setCookie ("count",0,100);
+				else { count = getCookie("count"); count++; setCookie ("count",count,100); }
+				document.write ("<br>Количество посещений этой страницы: " + getCookie("count"));
+				today = new Date;
+				if (!getCookie("time")) {
+					setCookie("time",today.getTime(),100);
+					document.write ("<br>Вы в первый раз на этой странице!");
+				} else {
+					diff = today.getTime() - getCookie("time");
+					setCookie ("time",today.getTime(),100);
+					days = diff / 1000 / 60 / 60 / 24;
+					days = Math.floor(days);
+					diff %= 1000 * 60 * 60 * 24;
+					hours = diff / 1000 / 60 / 60;
+					hours = Math.floor(hours);
+					diff %= 1000 * 60 * 60;
+					minutes = diff / 1000 / 60;
+					minutes = Math.floor (minutes);
+					diff %= 1000 * 60;
+					seconds = diff / 1000;
+					seconds = Math.floor (seconds);
+					diff %= 1000;
+					document.write ("<br>Вы посещали эту страницу " + days + " дней " + hours + " часов " + minutes + " минут " + seconds + " секунд " + diff + " миллисекунд назад!");
+				}
+			</script>
+			<br /><br />Введите имя: <input type="text" name="nick" />
+			<br /><br />
+			<input type="button" value="Зарегистрироваться" onClick="setCookie('name',document.form.nick.value,100);" />
+			<br /><br />
+			<input type="button" value="Обнулить посещения" onClick="deleteCookie('name');deleteCookie('count');deleteCookie('time');" />
+		</form>
+	</body>
+</html>

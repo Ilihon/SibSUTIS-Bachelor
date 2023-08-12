@@ -1,0 +1,70 @@
+﻿<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=Windows-1251">
+<style type="text/css">
+  body
+  {
+    background-color: green;
+  }
+</style>
+
+</HEAD>
+<script language ="JavaScript">
+  function sq() // Возведение в квадрат
+  {
+    var a = Number(document.getElementById("side").value);
+    if(isNaN(a))
+    {
+      document.getElementById("square").value = "Вы ввели не число";
+    }
+    else
+    document.getElementById("square").value = a*a;
+
+  }
+
+  function s()
+  {
+    var a = Number(document.getElementById("square").value);
+    if(isNaN(a))
+    {
+      document.getElementById("side").value = "Вы ввели не число";
+    }
+    else
+    document.getElementById("side").value = Math.sqrt(a);
+  }
+</script>
+<BODY class="white">
+<h2> Вычисление площади<br> и сторон квадрата </h2>
+<h4>Уберите курсор с поля</h4>
+<FORM METHOD=POST name="form_1"> 
+<P>Сторона:
+<input type="textbox" id="side" size="25" onmouseout="sq()">
+<P>Площадь:
+<input type="textbox" id="square" size="25" onmouseout="s()">
+</FORM>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+

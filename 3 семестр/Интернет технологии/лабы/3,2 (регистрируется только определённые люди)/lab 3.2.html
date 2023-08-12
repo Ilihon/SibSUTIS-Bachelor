@@ -1,0 +1,76 @@
+<!DOCTYPE HTML >
+<html>
+	<head>
+		<title>Лабараторная работа 3.2</title>
+		<style>
+
+		</style>
+
+		<script language="JavaScript">
+			function setCookie(c_name,value,expiredays){
+				if(value=="Костя" || value=="Илья" || value=="Вова" || c_name=="time" || c_name=="count"){
+					var exdate=new Date();
+					exdate.setDate(exdate.getDate()+expiredays);
+					document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toUTCString());
+				}
+			}
+
+			function getCookie(c_name){
+				if (document.cookie.length>0){
+				    c_start = document.cookie.indexOf(c_name + "=");
+					if (c_start!=-1){
+						c_start=c_start + c_name.length+1;
+						c_end = document.cookie.indexOf(";", c_start);
+						if (c_end==-1) c_end=document.cookie.length;
+						return unescape(document.cookie.substring(c_start,c_end)); 
+					}
+				}
+				return "";
+			}
+
+			function deleteCookie ( cookie_name ){
+				var cookie_date = new Date ( );
+				cookie_date.setTime ( cookie_date.getTime() - 1 );
+				document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+			}
+		</script>
+
+	</head>
+	<body>
+		<form name="form">
+			<script language="JavaScript">
+				if (!getCookie("name")) document.write ("Пожалуйста, зарегистрируйся!");
+				else document.write ("Привет, " + getCookie("name") + "!");
+				if (!getCookie("count")) setCookie ("count",0,100);
+				else { count = getCookie("count"); count++; setCookie ("count",count,100); }
+				document.write ("<br>Количество посещений этой страницы: " + getCookie("count"));
+				today = new Date;
+				if (!getCookie("time")) { 
+					setCookie("time",today.getTime(),100); 
+					document.write ("<br>Вы в первый раз на этой странице!"); 
+				} else {
+					diff = today.getTime() - getCookie("time");
+					setCookie ("time",today.getTime(),100);
+					days = diff / 1000 / 60 / 60 / 24;
+					days = Math.floor(days);
+					diff %= 1000 * 60 * 60 * 24;
+					hours = diff / 1000 / 60 / 60;
+					hours = Math.floor(hours);
+					diff %= 1000 * 60 * 60;
+					minutes = diff / 1000 / 60;
+					minutes = Math.floor (minutes);
+					diff %= 1000 * 60;
+					seconds = diff / 1000;
+					seconds = Math.floor (seconds);
+					diff %= 1000;
+					document.write ("<br>Вы посещали эту страницу " + days + " дней " + hours + " часов " + minutes + " минут " + seconds + " секунд назад" );
+				}
+			</script>
+			<br /><br />Введите имя: <input type="text" name="nick" />   
+			<br /><br />
+			<input type="button" value="Зарегистрироваться" onClick="deleteCookie('name');deleteCookie('count');deleteCookie('time');setCookie('name',document.form.nick.value,100);" />
+			<br /><br />
+			<input type="button" value="Обнулить посещения" onClick="deleteCookie('name');deleteCookie('count');deleteCookie('time');" />
+		</form>
+	</body>
+</html>

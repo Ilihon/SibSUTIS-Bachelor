@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Лабараторная 3.2</title>
+		<script>
+			function setCookie(c_name,value,expiredays)
+			{
+			var exdate=new Date();
+			exdate.setDate(exdate.getDate()+expiredays);
+			document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toUTCString());
+			}
+
+			function getCookie(c_name)
+			{
+			if (document.cookie.length>0)
+			  {
+			  c_start=document.cookie.indexOf(c_name + "=");
+			  if (c_start!=-1)
+				{
+				c_start=c_start + c_name.length+1;
+				c_end=document.cookie.indexOf(";",c_start);
+				if (c_end==-1) c_end=document.cookie.length;
+				return unescape(document.cookie.substring(c_start,c_end));
+				}
+			  }
+			return "";
+			}
+			function deleteCookie ( cookie_name )
+			{
+			  var cookie_date = new Date ( );
+			  cookie_date.setTime ( cookie_date.getTime() - 1 );
+			  document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+			  document.cookie= cookie_name=1;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="form">
+			<h1>COOKIE</h1>
+			<script>
+				if (!getCookie("name")) document.write ("Пожалуйста, зарегистрируйся!");
+				else document.write ("Привет, " + getCookie("name") + "!");
+				if (!getCookie("count-")) setCookie ("count-",0,100);
+				else { count = getCookie("count-"); count++; setCookie ("count-",count,100); }
+				document.write ("<br>Количество посещений этой страницы: " + getCookie("count-"));
+				today = new Date;
+				if (!getCookie("time-")) { setCookie("time-",today.getTime(),100);  }
+				else {
+					diff = today.getTime() - getCookie("time-");
+					setCookie ("time - ",today.getTime(),100);
+					days = diff / 1000 / 60 / 60 / 24;
+					days = Math.floor(days);
+					diff %= 1000 * 60 * 60 * 24;
+					hours = diff / 1000 / 60 / 60;
+					hours = Math.floor(hours);
+					diff %= 1000 * 60 * 60;
+					minutes = diff / 1000 / 60;
+					minutes = Math.floor (minutes);
+					diff %= 1000 * 60;
+					seconds = diff / 1000;
+					seconds = Math.floor (seconds);
+					diff %= 1000;
+					document.write ("<br>Вы посещали эту страницу " + days + " дней " + hours + " часов " + minutes + " минут " + seconds + " секунд назад!");
+				}
+				document.write("<br>Первый посетитель: " + getCookie('name=1',1));
+			</script>
+			<br>Введите имя: <input type="text" name ="nick"> <br> </input>
+			<input type="button" value="Зарегистрироваться!" onClick="setCookie('name',document.form.nick.value,100);"></input>
+			<br><input type="button" value="Обнулить посещения!" onClick="deleteCookie('name');deleteCookie('count-');deleteCookie('time-');"></input>
+			<br><input type="button" value="Первый посетитель!" onClick="setCookie('name',document.form.nick.value,c_start=1);"></input>
+		</form>
+	</body>
+</html>
+

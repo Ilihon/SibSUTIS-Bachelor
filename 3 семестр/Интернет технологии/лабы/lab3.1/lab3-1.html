@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Лабораторная работа 3.1</title>
+<style type="text/css">
+
+.main:hover { 
+cursor: pointer;
+}
+
+a:hover {
+cursor: pointer;
+background-color: pink;
+}
+
+.main {
+padding: 20px;
+background-color: teal;
+position: relative;
+display: inline-block;
+font-size: 25px;
+}
+
+.dropdown {
+position: absolute;
+display: none; 
+padding: 10px;
+background-color: teal;
+border: 3px solid black;
+}
+
+#sub2{
+left: 70px;
+}
+
+#sub3{
+left: 150px;
+}
+
+</style>
+<script type="text/javascript">
+timer;
+t;
+
+    function tshow(elem) { 
+        document.getElementById('sub1').style.display='none';
+        document.getElementById('sub2').style.display = 'none';
+        document.getElementById('sub3').style.display='none';
+        document.getElementById(elem).style.display='inline-block';
+    }
+
+    function thide(elem) {
+        timer = setTimeout(function() {
+        document.getElementById(elem).style.display='none';
+        }, 1000);
+    }
+</script>
+</head>
+<body>
+<div class="main">
+    <span  onMouseOver="tshow('sub1')" onMouseOut="thide('sub1')">Menu1</span>
+    <span  onMouseOver="tshow('sub2')" onMouseOut="thide('sub2')">Menu2</span>
+    <span  onMouseOver="tshow('sub3')" onMouseOut="thide('sub3')">Menu3</span>
+
+    <div onMouseOver="clearTimeout(timer)" onMouseOut="thide('sub1')" class="dropdown" id="sub1">
+        <a>subMenu1</a><br>
+        <a>subMenu1</a><br>
+        <a>subMenu1</a><br> 
+        <a>subMenu1</a>
+    </div>
+	
+    <div onMouseOver="clearTimeout(timer)" onMouseOut="thide('sub2')" class="dropdown" id="sub2">
+		<a>subMenu2</a><br>
+        <a>subMenu2</a><br>
+        <a>subMenu2</a><br> 
+        <a>subMenu2</a>
+    </div>
+	
+	
+    <div onMouseOver="clearTimeout(timer)" onMouseOut="thide('sub3')" class="dropdown" id="sub3">
+        <a>subMenu3</a><br>
+        <a>subMenu3</a><br>
+        <a>subMenu3</a><br> 
+        <a>subMenu3</a>
+    </div>
+</div>
+</body>
+</html>

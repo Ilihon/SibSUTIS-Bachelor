@@ -1,0 +1,234 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Лабораторная работа №3.3</title>
+		<style>
+		</style>
+		<script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
+		<script>
+			function AddOpt(arg, value, index)
+			{
+				var option = new Option(value, index);
+				switch ( arg ) 
+				{
+					case 0: 
+					{
+						document.forms[0].fak.options[index] = option;
+					} break;
+					
+					case 1: 
+					{
+						document.forms[0].kurs.options[index] = option;
+					} break;
+
+					case 2: 
+					{
+						document.forms[0].gruppa.options[index] = option;
+					} break;
+					
+					case 3: 
+					{
+						document.forms[0].stud.options[index] = option;
+					} break;
+				}
+			}
+			
+			function LoadDoc()
+			{
+				var xmldoc = new ActiveXObject("Microsoft.XMLDOM");  
+				xmldoc.async = false;
+				xmldoc.load("data.xml"); 
+				
+				fakultet = xmldoc.getElementsByTagName("fakultet");
+				document.forms[0].fak.length = 0;
+				for (var i = 0; i < fakultet.length; i++ )
+					AddOpt(0, fakultet.item(i).getAttribute("name"), i);
+				
+				kurs = fakultet.item(0).getElementsByTagName("kurs");
+				document.forms[0].kurs.length = 0;
+				for ( var i = 0; i < kurs.length; i++ )
+					AddOpt(1, kurs.item(i).getAttribute("value"), i);
+
+				//Вывод группы
+				gruppa = kurs.item(0).getElementsByTagName("gruppa");
+				document.forms[0].gruppa.length = 0;
+				for ( var i = 0; i < gruppa.length; i++ )
+					AddOpt(2, gruppa.item(i).getAttribute("name"), i);
+
+				//Вывод Студента
+				stud = gruppa.item(0).getElementsByTagName("stud");
+				document.forms[0].stud.length = 0;
+				for ( var i = 0; i < stud.length; i++ )
+					AddOpt(3, stud.item(i).getAttribute("name"), i);
+
+				//Вывод предметов
+				eltable = document.getElementById("mtable");
+				predmeti = gruppa.item(0).getElementsByTagName("predmeti");
+				predmeti = predmeti.item(0).getElementsByTagName("predmet");
+				for ( var i = 0; i < predmeti.length; i++ )	
+					eltable.rows[i + 1].cells[0].innerHTML = predmeti.item(i).text;
+				
+				//Вывод оценок
+				marks = stud.item(0).getElementsByTagName("mark");
+				for ( var i = 0; i < marks.length; i++ )
+					eval("document.forms[0].m" + (i + 1) + ".item("+ marks.item(i).text +").checked = true");
+			} 
+			
+			function ch_sel(arg, value)
+			{
+				switch ( arg ) 
+				{
+					case 0:
+					{
+						//Вывод курса
+						kurs = fakultet.item(value).getElementsByTagName("kurs");
+						document.forms[0].kurs.length = 0;
+						for ( var i = 0; i < kurs.length; i++ )
+							AddOpt(1, kurs.item(i).getAttribute("value"), i);
+						ch_sel(1, 0);
+					} break;
+					
+					case 1:
+					{
+						//Вывод группы
+						gruppa = kurs.item(document.forms[0].kurs.value).getElementsByTagName("gruppa");
+						document.forms[0].gruppa.length=0;
+						for ( var i = 0; i < gruppa.length; i++ )
+							AddOpt(2, gruppa.item(i).getAttribute("name"), i);
+						ch_sel(2, 0);
+					} break;
+
+					case 2:
+					{	
+						//Вывод Студента
+						stud = gruppa.item(document.forms[0].gruppa.value).getElementsByTagName("stud");
+						document.forms[0].stud.length = 0;
+						for ( var i = 0; i < stud.length; i++ )
+							AddOpt(3, stud.item(i).getAttribute("name"), i);
+						
+						//Вывод предметов
+						predmeti = gruppa.item(document.forms[0].gruppa.value).getElementsByTagName("predmeti");
+						predmeti = predmeti.item(0).getElementsByTagName("predmet");
+						for ( var i = 0; i < predmeti.length; i++ )
+							eltable.rows[i+1].cells[0].innerHTML = predmeti.item(i).text;
+						ch_sel(3, 0);
+					} break;
+					
+					case 3:
+					{
+						//Вывод Оценок
+						stud = gruppa.item(document.forms[0].gruppa.value).getElementsByTagName("stud");
+						marks = stud.item(value).getElementsByTagName("mark");
+						for ( var i = 0; i < marks.length; i++ )
+							eval("document.forms[0].m" + (i + 1) + ".item("+ marks.item(i).text +").checked = true");
+					} break;
+				}
+			}
+			
+			function setMark(arg, value)
+			{
+				marks.item(arg).textContent = value;
+				xmldoc.save("data.xml");
+				//alert(1);
+			}
+
+			function calc()
+			{
+				var radios = document.getElementsByTagName('input');
+				var sum = 0;
+				var one_count = 0;
+				for ( var j = 0; j < radios.length; j++ ){
+					for ( var i = 0; i < radios.length; i++ ){
+						if ( radios[i].type == 'radio' && radios[i].checked && radios[i].name == ('m' + j) ){
+							sum += parseInt(radios[i].value, 10);
+							if(parseInt(radios[i].value, 10)==1)
+								one_count += 1;  
+						}
+					}
+				}
+				var vdiv = document.getElementById("div2");	
+
+
+				sum = Math.floor(sum / 7 * 10) / 10;
+				vdiv.innerHTML = "Средний балл за контрольный срок: "+ sum +" баллов. Количество единиц: " + one_count;
+			}
+
+			function nullify()
+			{
+				$('.change').prop('checked', true);
+				calc();			
+			}
+		</script>
+	</head>
+
+
+
+	<body bgcolor="white" onLoad="LoadDoc();">		
+		<div align="center">
+			<form>				
+				Факультет: <select id="fak" onChange="ch_sel(0, this.value)"></select>
+				Курс: <select id="kurs" onChange="ch_sel(1, this.value)"></select>	
+				Группа: <select id="gruppa" onChange="ch_sel(2, this.value)"></select>			
+				ФИО: <select id="stud" onChange="ch_sel(3, this.value)"></select>
+				<input type="button" onClick="nullify()" value="Обнулить">
+				
+				<table border=2 id="mtable">
+					<tr>
+						<td align="center" width=340>Предмет</td>
+						<td align="center">0</td>
+						<td align="center">1</td>
+						<td align="center">2</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="radio" name="m1" value=0 class="change" onClick="setMark(0, this.value)"></td>
+						<td><input type="radio" name="m1" value=1  onClick="setMark(0, this.value)"></td>
+						<td><input type="radio" name="m1" value=2  onClick="setMark(0, this.value)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="radio" name="m2" value=0 class="change" onClick="setMark(1, this.value)"></td>
+						<td><input type="radio" name="m2" value=1  onClick="setMark(1, this.value)"></td>
+						<td><input type="radio" name="m2" value=2  onClick="setMark(1, this.value)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="radio" name="m3" value=0 class="change" onClick="setMark(2, this.value)"></td>
+						<td><input type="radio" name="m3" value=1 onClick="setMark(2, this.value)"></td>
+						<td><input type="radio" name="m3" value=2  onClick="setMark(2, this.value)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="radio" name="m4" value=0 class="change" onClick="setMark(3, this.value)"></td>
+						<td><input type="radio" name="m4" value=1  onClick="setMark(3, this.value)"></td>
+						<td><input type="radio" name="m4" value=2  onClick="setMark(3, this.value)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="radio" name="m5" value=0 class="change" onClick="setMark(4, this.value)"></td>
+						<td><input type="radio" name="m5" value=1  onClick="setMark(4, this.value)"></td>
+						<td><input type="radio" name="m5" value=2  onClick="setMark(4, this.value)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="radio" name="m6" value=0 class="change" onClick="setMark(5, this.value)"></td>
+						<td><input type="radio" name="m6" value=1  onClick="setMark(5, this.value)"></td>
+						<td><input type="radio" name="m6" value=2 onClick="setMark(5, this.value)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="radio" name="m7" value=0 class="change" onClick="setMark(6, this.value)"></td>
+						<td><input type="radio" name="m7" value=1  onClick="setMark(6, this.value)"></td>
+						<td><input type="radio" name="m7" value=2 onClick="setMark(6, this.value)"></td>
+					</tr>
+				</table>
+
+				<input type="button" onClick="calc();" value="Выполнить">
+				<input type="button" onClick="javascript:var vdiv=document.getElementById('div2');	vdiv.innerHTML=''" value="Отменить">
+			</form>
+		</div>
+		<div align="center" id="div2"></div>
+	</body>
+
+</html> 

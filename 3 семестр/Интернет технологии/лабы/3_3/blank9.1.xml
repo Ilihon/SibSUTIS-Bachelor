@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<university>  
+    <faculties>
+        <faculty>ИВТ</faculty>
+        <faculty>МТС</faculty>
+        <faculty>МРМ</faculty>
+        <faculty>ГФ</faculty>
+        <faculty>АЭС</faculty>
+    </faculties>
+
+    <courses>
+        <course>1</course>
+        <course>2</course>
+        <course>3</course>
+        <course>4</course>
+    </courses>
+
+    <groups>
+        <group>ИП-913</group>
+        <group>ИВ-922</group>
+        <group>АП-023</group>
+        <group>ГМ-813</group>
+        <group>РИ-91</group>
+    </groups>
+</university>

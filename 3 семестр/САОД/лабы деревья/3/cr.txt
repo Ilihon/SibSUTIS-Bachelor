@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <conio.h>
+#include <iostream>
+#include <fstream>
+#include <cstring>
+
+using namespace std;
+
+const int N = 5;
+
+struct vertex
+{
+	vertex *left;
+	vertex *right;
+	string data;
+	int repeat;
+};
+
+vertex *root = NULL;
+
+void SDP(char* data, vertex*&p); 
+void leftToRight(vertex*);
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+
+
+	char buff[100];
+	ifstream file("cr.txt");
+
+	if (!file.is_open()) {
+		cout << "File can't be open!\n";
+		return 1;
+	}
+
+	while (!file.eof()) {
+		file >> buff;
+		SDP(buff, root);
+		//cout << buff << ' '; 
+	}
+	cout << endl;
+	
+	file.close();
+
+	leftToRight(root); 
+
+	_getch();
+	return 0;
+}
+void SDP(char *data, vertex* &p)
+{
+	if (!p) {
+		p = new vertex;
+		p->data = data;
+		p->left = NULL;
+		p->right = NULL;
+		p->repeat = 1;
+
+	} 
+	else if (data == p->data) {
+			p->repeat++;
+		}
+		else if (data < p->data) {
+				SDP(data, p->left);
+		     }
+			 else if (data > p->data) {
+					  SDP(data, p->right);
+			      }
+				  else {
+					  return;
+				  }
+}
+void leftToRight(vertex *point)
+{
+	if (point == NULL) {
+		return;
+	}
+	leftToRight(point->left);
+	cout << point->data.c_str() << '-' << point->repeat << endl;
+	leftToRight(point->right);
+}

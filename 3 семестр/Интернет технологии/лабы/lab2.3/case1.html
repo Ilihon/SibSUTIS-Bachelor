@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<script>
+function Sq() { //возведение в квадрат
+	var a = Number(document.getElementById("num1").value);
+	document.getElementById("result").value = a*a;
+	}
+
+function S(){
+	var a = Number(document.getElementById("square").value);
+	document.getElementById("num1").value = Math.sqrt(a);
+}
+</script>
+</HEAD>
+
+<BODY background="1.jpg">
+
+<h1 align=center style = "color:white"><b><dfn>Вычисление площади</dfn></b></h1>
+<h2 align=center style = "color:white">Автоматически</h2>
+
+<FORM align=center name="FORM1">
+<p style = "color:white">	Сторона: </p> <input type="text" size=7 id = "num1" onKeyUp="Sq()">
+<hr>
+<p style = "color:white"> Площадь: </p><input type="text" size=7 id = "result" onKeyUp="S()"><hr>
+<input type="reset" value="Обновить">
+</FORM>
+
+</BODY>
+
+</HTML>

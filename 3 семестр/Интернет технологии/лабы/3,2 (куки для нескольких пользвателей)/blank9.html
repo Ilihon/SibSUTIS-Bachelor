@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<head>
+   
+</head>
+
+<style>
+
+    .wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .university {
+                text-align: center;
+            }
+    .group {
+                font-weight: bold;
+            }
+    .brigade{
+        font-weight: bold;
+        text-align: right;
+    }
+    .names{
+        text-align: right;
+    }
+
+    .studentNames {
+        text-align: right;
+    }
+
+    .information {
+        display: flex;
+    }
+
+    .welcome {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .cookies {
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+    }
+
+    .vizit {
+        margin-right: 10px;
+    }
+
+    .newReg {
+        display: none;
+    }
+
+</style>
+
+<body>
+
+   <h1 class="university"> Лабораторная работа N 3.2
+ <br>Использование cookies</h1>
+    <p class="group">
+        Группа
+    </p>
+    <p class="brigade">
+        Бригада №3
+    </p>
+    <p class="names">
+        Имя<br>
+        Имя<br>
+        Имя
+
+    <div class="wrap">
+        <div class="welcome"></div>
+        <div class="reg">Зарегистрируйтесь (Введите ваше имя)</div>
+        <div class="information">
+            <div class="vizit"></div>
+            <div class="time"></div>
+        </div>
+      <form action="#" class="cookies">
+            <input type="text" class="name" placeholder="Введите имя">
+            <button class="registration">Зарегистрироваться</button>
+            <button class="reset">Обнулить посещения</button>
+      </form>
+    </div>
+
+
+
+
+    <script>
+        let regBtn = document.querySelector(".registration");
+        let resBtn = document.querySelector(".reset");
+        let reg = document.querySelector(".reg");
+        let name = document.querySelector(".name");
+        let wel = document.querySelector(".welcome");
+        let time = document.querySelector(".time");
+        let vizit = document.querySelector(".vizit");
+        let input = document.querySelector(".name");
+        
+        let pos = 0;
+
+        let today = new Date()
+        let expires = new Date()
+
+        let day = today.getDate();
+        let hours = today.getHours();
+        let minutes = today.getMinutes();
+        let seconds = today.getSeconds();
+        expires.setTime(today.getTime() + 1000*60*60*24*365)
+
+        let username= ''
+
+        function setCookie(name, value, expire) {  
+            document.cookie = name + "=" + escape(value) +
+            
+            ((expire == null) ? "" : ("; expires=" + expire.toGMTString()))
+        }
+
+        function getCookie(Name) {   
+            let search = Name + "="
+                //Создается строка для поиска в document.cookie
+            if (document.cookie.length > 0) {
+                offset = document.cookie.indexOf(search)
+                    //Поиск cookie по ее имени
+                if (offset != -1) {
+                    offset += search.length
+                    end = document.cookie.indexOf(";", offset)
+                        //Определили положение нужной cookie, и по индексам вырежем ее
+                    if (end == -1)
+                        end = document.cookie.length
+                    return unescape(document.cookie.substring(offset, end))
+                        //Вернули подстроку, содержащюю нужное значение cookie
+                }
+            }
+        }
+
+
+        function cookieSite() {
+            reg.style.display = "none";
+            
+            username = getCookie("name");
+            pos = Number(getCookie("pos-"+username));
+            setCookie("pos-"+username, ++pos, expires);
+            wel.innerHTML = "Привет, " + getCookie("name");
+            time.style.display = "block";
+            vizit.innerHTML = "Количество посещений: "+ getCookie("pos-"+username) + " ";
+            time.innerHTML = "Последнее посещение данного сайта было: " +  getCookie("day-"+username) + " октября " + "в " + getCookie("hours-"+username) + ":" + getCookie("minutes-"+username);
+            setCookie("day-"+username, day, expires);
+            setCookie("hours-"+username, hours, expires);
+            setCookie("minutes-"+username, minutes, expires);
+        }
+	function cookieSite2() {
+            reg.style.display = "none";
+            
+            username = getCookie("name");
+            pos = Number(getCookie("pos-"+username));
+            wel.innerHTML = "Привет, " + getCookie("name");
+            time.style.display = "block";
+            vizit.innerHTML = "Количество посещений: "+ getCookie("pos-"+username) + " ";
+            time.innerHTML = "Последнее посещение данного сайта было: " +  getCookie("day-"+username) + " октября " + "в " + getCookie("hours-"+username) + ":" + getCookie("minutes-"+username);
+            setCookie("day-"+username, day, expires);
+            setCookie("hours-"+username, hours, expires);
+            setCookie("minutes-"+username, minutes, expires);
+        }
+
+
+        regBtn.onclick = function() {
+	    username = name.value;
+            setCookie("name", username, expires);
+	    if(getCookie("pos-"+username)>0){}
+	    else{setCookie("pos-"+username, 0, expires);}
+            setCookie("day-"+username, day, expires);
+            setCookie("hours-"+username, hours, expires);
+            setCookie("minutes-"+username, minutes, expires);
+            setCookie("seconds-"+username, seconds, expires);
+            cookieSite();
+        }
+	
+        if(getCookie("pos-"+getCookie("name")) > 0 ) {
+           cookieSite();
+        } 
+
+        resBtn.onclick = function() {
+            username = getCookie("name");
+            setCookie("pos-"+username, 0, expires);
+            vizit.innerHTML = "Количество посещений: " + getCookie("pos-"+username) + " ";
+        }
+
+        
+
+
+        
+    </script>
+</body>
+</html>

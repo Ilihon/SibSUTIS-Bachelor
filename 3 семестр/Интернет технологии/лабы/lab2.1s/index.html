@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Лабораторная 2.1</title>
+<style>
+    .perfect
+    {
+    transform: scale(1, -1);
+    }
+    .b1 {
+      background: red;
+      color:white;
+    }
+</style>
+</head>
+    <body>
+        <script language="JavaScript">
+        var i=1;
+        var n=200;
+
+        function Anim()
+        {
+            document.img1.src="\img/s"+i+".gif";
+            i++;
+            if (i == 12) i = 1;
+        }
+
+        function changeColor(btn) {
+
+          var s = btn.id;
+          if (s == "b1"){
+           b4.style.backgroundColor="red";
+           b1.style.backgroundColor ='';
+          }
+          if (s == "b4"){
+           b1.style.backgroundColor="red";
+           b4.style.backgroundColor ='';
+          }
+        }
+        </script>
+
+    <img src="img/s1.gif" name="img1" width=400 height=60 onLoad="timer=setTimeout('Anim()',n)">
+    <form name="form">
+        <input type="button" value="Старт" id=b1 onclick="timer=setTimeout('Anim()',n), changeColor(this)" >
+        <input type="button" value="Быстрее" onclick="n-=50">
+        <input type="button" value="Медленнее" onclick="n+=50">
+        <input type="button" value="Стоп" id=b4 onclick="clearTimeout(timer),changeColor(this)">
+    </form>
+
+    </body>
+</html>

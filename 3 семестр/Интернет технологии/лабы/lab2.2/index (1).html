@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+<TITLE>Лабораторная 2.2</TITLE>
+</HEAD>
+
+<style type="text/css">
+H1 { text-align: center;
+font-family: "Times New Roman";
+color: black;
+
+}
+P {
+font-family: "Times New Roman";
+color: black;
+}
+</style>
+
+<BODY BGCOLOR="lightblue">
+
+<H1>Собери мозаику!</H1>
+
+<P>Перемещая картинки мышкой нужно собрать рисунок.</P>
+
+<img src="http://mysite/wp-content/uploads/2019/11/r3.gif" style="cursor:hand" width="90" height="160" id="r3" onmouseover="n=3; ee();">
+<img src="http://mysite/wp-content/uploads/2019/11/r2.gif" style="cursor:hand" width="90" height="160" id="r2" onmouseover="n=2; ee();">
+<BR>
+<img src="http://mysite/wp-content/uploads/2019/11/r4.gif" style="cursor:hand" width="90" height="160" id="r4" onmouseover="n=4; ee();">
+<img src="http://mysite/wp-content/uploads/2019/11/r1.gif" style="cursor:hand" width="90" height="160" id="r1" onmouseover="n=1; ee();">
+
+<script language ="JavaScript">
+
+//var k = 0;
+
+function ee(){
+
+//if (k == 0){
+var elem = document.getElementById('r' + n);
+
+elem.onmousedown = function(e) {
+
+elem.style.position = 'absolute';
+moveAt(e);
+
+document.body.appendChild(elem);
+
+elem.style.zIndex = 1000;
+
+function moveAt(e) {
+elem.style.left = e.pageX - elem.offsetWidth / 2 + 'px';
+elem.style.top = e.pageY - elem.offsetHeight / 2 + 'px';
+}
+
+document.onmousemove = function(e) {
+moveAt(e);
+};
+
+elem.onmouseup = function() {
+document.onmousemove = null;
+elem.onmouseup = null;
+};
+elem.ondragstart = function() {
+return false;
+};
+// }
+}
+/* if (k == 1){
+if (n != 2 && n != 4){*/
+var elem = document.getElementById('r' + n);
+
+elem.onmousedown = function(e) {
+
+elem.style.position = 'absolute';
+moveAt(e);
+
+document.body.appendChild(elem);
+
+elem.style.zIndex = 1000;
+
+function moveAt(e) {
+elem.style.left = e.pageX - elem.offsetWidth / 2 + 'px';
+elem.style.top = e.pageY - elem.offsetHeight / 2 + 'px';
+}
+
+document.onmousemove = function(e) {
+moveAt(e);
+};
+
+elem.onmouseup = function() {
+document.onmousemove = null;
+elem.onmouseup = null;
+};
+elem.ondragstart = function() {
+return false;
+};
+}
+//}
+//}
+}
+</script>
+
+</BODY>
+</HTML>

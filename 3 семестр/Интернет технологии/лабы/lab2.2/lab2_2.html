@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.2//RU">
+<html>
+<head>
+<title>Лабораторная 2.2</title>
+</head>
+<body BGCOLOR = "lightblue">
+<img name = 'r1' src = 'r1.gif' />
+<img name = 'r2' src = 'r2.gif' />
+<img name = 'r3' src = 'r3.gif' />
+<img name = 'r4' src = 'r4.gif' />
+<script language = 'javascript'>
+
+var r1 = document.getElementById('r1');
+r1.onmousedown = function(event) {
+
+  let shiftX = event.clientX - r1.getBoundingClientRect().left;
+  let shiftY = event.clientY - r1.getBoundingClientRect().top;
+
+  r1.style.position = 'absolute';
+  r1.style.zIndex = 1000;
+  document.body.append(r1);
+
+  moveAt(event.pageX, event.pageY);
+
+  // переносит мяч на координаты (pageX, pageY),
+  // дополнительно учитывая изначальный сдвиг относительно указателя мыши
+  function moveAt(pageX, pageY) {
+    r1.style.left = pageX - shiftX + 'px';
+    r1.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // передвигаем мяч при событии mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // отпустить мяч, удалить ненужные обработчики
+  r1.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    r1.onmouseup = null;
+  };
+
+};
+
+r1.ondragstart = function() {
+  return false;
+};
+</body>
+</html>

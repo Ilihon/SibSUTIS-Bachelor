@@ -1,0 +1,13 @@
+.images {
+  margin: 20vh auto;
+  padding: auto;
+  width: auto;
+  height: 50vh;
+  text-align: center;
+}
+
+.images img {
+  display: inline-block;
+  z-index: 1;
+  border: 0px;
+}
